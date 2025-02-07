@@ -15,7 +15,7 @@ C:/Users/amsar/Sobrevivencia
 -logFile
 Logs/AssetImportWorker9.log
 -srvPort
-53907
+50464
 -job-worker-count
 7
 -background-job-worker-count
@@ -58,12 +58,12 @@ C:/Users/amsar/Sobrevivencia
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [7764] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2470679580 [EditorId] 2470679580 [Version] 1048832 [Id] WindowsEditor(7,Marcos) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [7764] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2470679580 [EditorId] 2470679580 [Version] 1048832 [Id] WindowsEditor(7,Marcos) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [26940] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2948773000 [EditorId] 2948773000 [Version] 1048832 [Id] WindowsEditor(7,Marcos) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [26940] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2948773000 [EditorId] 2948773000 [Version] 1048832 [Id] WindowsEditor(7,Marcos) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 1.53 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.62 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.20f1 (0e25a174756c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Resources/UnitySubsystems
@@ -79,45 +79,45 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56564
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56116
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006477 seconds.
-- Loaded All Assemblies, in  0.387 seconds
+Registered in 0.005693 seconds.
+- Loaded All Assemblies, in  0.374 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.343 seconds
-Domain Reload Profiling: 726ms
-	BeginReloadAssembly (108ms)
+- Finished resetting the current domain, in  0.310 seconds
+Domain Reload Profiling: 680ms
+	BeginReloadAssembly (102ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (59ms)
-	LoadAllAssembliesAndSetupDomain (166ms)
-		LoadAssemblies (104ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (57ms)
+	LoadAllAssembliesAndSetupDomain (164ms)
+		LoadAssemblies (97ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (163ms)
-			TypeCache.Refresh (161ms)
-				TypeCache.ScanAssembly (148ms)
+		AnalyzeDomain (160ms)
+			TypeCache.Refresh (158ms)
+				TypeCache.ScanAssembly (144ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (344ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (310ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (289ms)
+		SetupLoadedEditorAssemblies (258ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (11ms)
 			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (6ms)
-			ProcessInitializeOnLoadAttributes (212ms)
-			ProcessInitializeOnLoadMethodAttributes (54ms)
+			BeforeProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (184ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -128,136 +128,883 @@ Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\amsar\Sobrevivencia\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\amsar\Sobrevivencia\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Asset path could not be found for script compilation file '/Assets/Forst/Conifers [BOTD]/Installer/Editor/ConifersInstaller.cs'
-Asset path could not be found for script compilation file '/Assets/Forst/Conifers [BOTD]/Installer/Editor/LaunchConifersInstaller.cs'
-Asset path could not be found for script compilation file '/Assets/Forst/CTI Runtime Components/CTI Runtime Components BIRP/Scripts/Editor/CTI_AdvancedEdgeFluttering.cs'
-Asset path could not be found for script compilation file '/Assets/Forst/CTI Runtime Components/CTI Runtime Components BIRP/Scripts/Editor/CTI_DetailsEnum.cs'
-Asset path could not be found for script compilation file '/Assets/Forst/CTI Runtime Components/CTI Runtime Components BIRP/Scripts/Editor/CTI_ShaderGUI.cs'
-- Loaded All Assemblies, in  0.935 seconds
-Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.873 seconds
+Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.679 seconds
-Domain Reload Profiling: 1609ms
-	BeginReloadAssembly (416ms)
+- Finished resetting the current domain, in  0.639 seconds
+Domain Reload Profiling: 1508ms
+	BeginReloadAssembly (398ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (34ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (403ms)
-		LoadAssemblies (325ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (371ms)
+		LoadAssemblies (302ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (169ms)
-			TypeCache.Refresh (144ms)
-				TypeCache.ScanAssembly (129ms)
-			BuildScriptInfoCaches (18ms)
+		AnalyzeDomain (156ms)
+			TypeCache.Refresh (133ms)
+				TypeCache.ScanAssembly (121ms)
+			BuildScriptInfoCaches (17ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (680ms)
+	FinalizeReload (640ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (477ms)
+		SetupLoadedEditorAssemblies (446ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (42ms)
-			ProcessInitializeOnLoadAttributes (397ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
+			BeforeProcessingInitializeOnLoad (39ms)
+			ProcessInitializeOnLoadAttributes (372ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
 			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (14ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 1.39 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.27 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 96 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3219 unused Assets / (1.7 MB). Loaded Objects now: 3895.
-Memory consumption went from 162.7 MB to 161.0 MB.
-Total: 8.672500 ms (FindLiveObjects: 0.683800 ms CreateObjectMapping: 0.502600 ms MarkObjects: 6.030200 ms  DeleteObjects: 1.454600 ms)
+Unloading 86 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3196 unused Assets / (1.5 MB). Loaded Objects now: 3884.
+Memory consumption went from 144.3 MB to 142.9 MB.
+Total: 5.711900 ms (FindLiveObjects: 0.352300 ms CreateObjectMapping: 0.202800 ms MarkObjects: 3.960800 ms  DeleteObjects: 1.195100 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 730640.152988 seconds.
-  path: Assets/Pacotes/SciFi_Space_Soldier/Prefabs/Space_Soldier_A_LOD1.prefab
-  artifactKey: Guid(ee13d518658eb2140a5cf1e59a3de544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/SciFi_Space_Soldier/Prefabs/Space_Soldier_A_LOD1.prefab using Guid(ee13d518658eb2140a5cf1e59a3de544) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7d7427558b79362675630d1006c11b7b') in 0.3655508 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 94
+  Time since last request: 15658.077820 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Textures/black-color.png
+  artifactKey: Guid(d35a86981ce0835469c36ee0215785b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Textures/black-color.png using Guid(d35a86981ce0835469c36ee0215785b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e25ebbb92a5e1f3879cd5fefad9f6207') in 0.0655385 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Textures/window_big.png
+  artifactKey: Guid(52f89a41c5c9f1b4280ba2133f0bf7b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Textures/window_big.png using Guid(52f89a41c5c9f1b4280ba2133f0bf7b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3ff645b647791d063bc280994e9a2b55') in 0.0314318 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.528873 seconds.
   path: Assets/Pacotes/SciFi_Space_Soldier/Prefabs/Space_Soldier_Ragdoll_A.prefab
   artifactKey: Guid(4045ab46594095b41ad7a0f08cfd554c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/SciFi_Space_Soldier/Prefabs/Space_Soldier_Ragdoll_A.prefab using Guid(4045ab46594095b41ad7a0f08cfd554c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0a88b4a8989f842137a1ab3128c05410') in 0.0809331 seconds
+Start importing Assets/Pacotes/SciFi_Space_Soldier/Prefabs/Space_Soldier_Ragdoll_A.prefab using Guid(4045ab46594095b41ad7a0f08cfd554c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c930fdf4799249fc3d7b831a4feec2c0') in 0.160781 seconds
 Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
 To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 210
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 197
 
 ========================================================================
 Received Import Request.
-  Time since last request: 25.315514 seconds.
-  path: Assets/Pacotes/SciFi_Space_Soldier/Resources/Space_Soldier/Materials/M_Soldier_A_Legs.mat
-  artifactKey: Guid(ceaa229ea18542d4fa2b0e4414c91b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/SciFi_Space_Soldier/Resources/Space_Soldier/Materials/M_Soldier_A_Legs.mat using Guid(ceaa229ea18542d4fa2b0e4414c91b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '24d930677a3d70ef0180fa29d7f3f0b0') in 0.0435671 seconds
+  Time since last request: 18.297019 seconds.
+  path: Assets/Pacotes/SciFi_Space_Soldier/Resources/Weapons/Rifle/Materials/M_Weapon_Rifle_C.mat
+  artifactKey: Guid(3d2595c56f4971940887d32a5abace2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/SciFi_Space_Soldier/Resources/Weapons/Rifle/Materials/M_Weapon_Rifle_C.mat using Guid(3d2595c56f4971940887d32a5abace2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c88e11eef6e86279b0f2b24fe4eaf16c') in 0.0333985 seconds
 Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
 To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3189 unused Assets / (1.6 MB). Loaded Objects now: 3930.
+Memory consumption went from 134.9 MB to 133.3 MB.
+Total: 7.657300 ms (FindLiveObjects: 0.409600 ms CreateObjectMapping: 0.447900 ms MarkObjects: 5.341000 ms  DeleteObjects: 1.457800 ms)
+
+Prepare: number of updated asset objects reloaded= 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\amsar\Sobrevivencia\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\amsar\Sobrevivencia\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.551 seconds
+Refreshing native plugins compatible for Editor in 1.37 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.619 seconds
+Domain Reload Profiling: 1167ms
+	BeginReloadAssembly (155ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (317ms)
+		LoadAssemblies (271ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (114ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (100ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (620ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (420ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (38ms)
+			ProcessInitializeOnLoadAttributes (346ms)
+			ProcessInitializeOnLoadMethodAttributes (21ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 0.98 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3194 unused Assets / (1.6 MB). Loaded Objects now: 3928.
+Memory consumption went from 137.5 MB to 135.9 MB.
+Total: 7.790800 ms (FindLiveObjects: 0.486400 ms CreateObjectMapping: 0.537500 ms MarkObjects: 5.305600 ms  DeleteObjects: 1.460400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.09 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3189 unused Assets / (1.6 MB). Loaded Objects now: 3928.
+Memory consumption went from 137.6 MB to 136.0 MB.
+Total: 7.049900 ms (FindLiveObjects: 0.369300 ms CreateObjectMapping: 0.436000 ms MarkObjects: 4.799000 ms  DeleteObjects: 1.444800 ms)
+
+Prepare: number of updated asset objects reloaded= 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\amsar\Sobrevivencia\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\amsar\Sobrevivencia\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.544 seconds
+Refreshing native plugins compatible for Editor in 1.27 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.589 seconds
+Domain Reload Profiling: 1130ms
+	BeginReloadAssembly (151ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (313ms)
+		LoadAssemblies (274ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (112ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (99ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (589ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (403ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (38ms)
+			ProcessInitializeOnLoadAttributes (331ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3194 unused Assets / (1.6 MB). Loaded Objects now: 3928.
+Memory consumption went from 139.4 MB to 137.8 MB.
+Total: 8.378900 ms (FindLiveObjects: 0.378100 ms CreateObjectMapping: 0.414200 ms MarkObjects: 6.118900 ms  DeleteObjects: 1.466600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3188 unused Assets / (1.1 MB). Loaded Objects now: 3927.
+Memory consumption went from 139.6 MB to 138.4 MB.
+Total: 7.537500 ms (FindLiveObjects: 0.609800 ms CreateObjectMapping: 0.646700 ms MarkObjects: 5.164400 ms  DeleteObjects: 1.115600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\amsar\Sobrevivencia\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\amsar\Sobrevivencia\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.554 seconds
+Refreshing native plugins compatible for Editor in 1.23 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.607 seconds
+Domain Reload Profiling: 1158ms
+	BeginReloadAssembly (159ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (320ms)
+		LoadAssemblies (282ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (118ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (103ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (608ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (408ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (41ms)
+			ProcessInitializeOnLoadAttributes (332ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3193 unused Assets / (1.4 MB). Loaded Objects now: 3927.
+Memory consumption went from 141.3 MB to 139.9 MB.
+Total: 7.633800 ms (FindLiveObjects: 0.456800 ms CreateObjectMapping: 0.260700 ms MarkObjects: 5.550200 ms  DeleteObjects: 1.364800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 231.321321 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Materials/projector_warning.mat
+  artifactKey: Guid(51d587eafcd13384bafd060c5bc7cb82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Materials/projector_warning.mat using Guid(51d587eafcd13384bafd060c5bc7cb82) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6656c0746e2981eb015fce02399fb4ab') in 0.1356699 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.506008 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Doors/door_2.prefab
+  artifactKey: Guid(820591594dcfa124d8a9c5d016d6c22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Doors/door_2.prefab using Guid(820591594dcfa124d8a9c5d016d6c22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a86c368cbdb883254606e20d0a23d5c2') in 0.0423922 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 42
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Doors/glass_panel_1_with_door.prefab
+  artifactKey: Guid(ac7a01ca06ca9044eb15b32cb7a936f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Doors/glass_panel_1_with_door.prefab using Guid(ac7a01ca06ca9044eb15b32cb7a936f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd0fcf2cf7fe944f64ea0c695d00de75b') in 0.0249859 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 37
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.397076 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_2.prefab
+  artifactKey: Guid(6812e31ceb91fc04da03973c6b1054cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_2.prefab using Guid(6812e31ceb91fc04da03973c6b1054cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '981f0aa29e244113091bf77b9d0a26b3') in 0.0256102 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_3.prefab
+  artifactKey: Guid(a185d2c8149cc7d45a8bc91951812dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_3.prefab using Guid(a185d2c8149cc7d45a8bc91951812dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '873517e47c2be8f1c36f5a36a5ddcaa5') in 0.0196298 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_3_no_clamps.prefab
+  artifactKey: Guid(d4c686e5f86722a409d1d35154c22d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_3_no_clamps.prefab using Guid(d4c686e5f86722a409d1d35154c22d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9f099c3b7ab1302d9d4b991225f9b993') in 0.0171924 seconds
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_6.prefab
+  artifactKey: Guid(3845c7234a0ed4843ba4e38e2404f54d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_6.prefab using Guid(3845c7234a0ed4843ba4e38e2404f54d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'df29dfeda0cd08ac56a155ce4031d473') in 0.0168651 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_2_blank.prefab
+  artifactKey: Guid(69b3d20c177508d43a1c6f09b448d3ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Floors/floor_2_blank.prefab using Guid(69b3d20c177508d43a1c6f09b448d3ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '32008eb1035f60283cc94a4725266ed6') in 0.020303 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.357808 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_celing_2.prefab
+  artifactKey: Guid(e15828603e27c5e42b39860e4f55da70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_celing_2.prefab using Guid(e15828603e27c5e42b39860e4f55da70) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ca0be63b4523be70f234b4ef3d9143ef') in 0.01627 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_corner_1.prefab
+  artifactKey: Guid(43373d8b4f572cf468859751b9dcbbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_corner_1.prefab using Guid(43373d8b4f572cf468859751b9dcbbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7df8242bc12722195045f7f064244143') in 0.017599 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_2_blue.prefab
+  artifactKey: Guid(5412c75372d92be4484fa4a55b5c99e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_2_blue.prefab using Guid(5412c75372d92be4484fa4a55b5c99e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fd1703f77856c6facc93729149cf72d3') in 0.0165342 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_2.prefab
+  artifactKey: Guid(8e32be8f06ec06448ac537b609c2d7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_2.prefab using Guid(8e32be8f06ec06448ac537b609c2d7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e07fbe4f7b4ba2a694161f64b51e7e8') in 0.015895 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_3_blue.prefab
+  artifactKey: Guid(8b5797a18349fb546be8acddc71151ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Lights/light_wall_3_blue.prefab using Guid(8b5797a18349fb546be8acddc71151ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '262b74053b19bf58cefc4f96c694d533') in 0.0148107 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.318799 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Walls/decorative_wall_4_computer.prefab
+  artifactKey: Guid(897c9b0e5e04118499e0903c7754628f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Walls/decorative_wall_4_computer.prefab using Guid(897c9b0e5e04118499e0903c7754628f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '11beebfa393c0801b3896447a2e68fd2') in 0.0318935 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 27
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Walls/decorative_wall_5.prefab
+  artifactKey: Guid(339299a7e2fdedf47b7788ab1a25c9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Walls/decorative_wall_5.prefab using Guid(339299a7e2fdedf47b7788ab1a25c9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '27b7f9d2ce1228ce9c95fd8ed01f2462') in 0.017535 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Walls/wall_big.prefab
+  artifactKey: Guid(b38a3290156af5046a449900e3163984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Walls/wall_big.prefab using Guid(b38a3290156af5046a449900e3163984) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '740b46442a4c23fc4dede98beb22c8f4') in 0.0145217 seconds
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Walls/glass_panel_1_corner.prefab
+  artifactKey: Guid(8c3a444b099b80643a84476bfefca60d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Walls/glass_panel_1_corner.prefab using Guid(8c3a444b099b80643a84476bfefca60d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '09c84723de0ceb29b0fb593cc4692efb') in 0.022816 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.156180 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_blocker_3.prefab
+  artifactKey: Guid(7e2e8028213a4834fa8f2991bdefe708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_blocker_3.prefab using Guid(7e2e8028213a4834fa8f2991bdefe708) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9e469abc23aad6636a14186c3dc2fbc2') in 0.0130297 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_corner_far_plug.prefab
+  artifactKey: Guid(78417f9c0e3bda049a9a38dad7104d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_corner_far_plug.prefab using Guid(78417f9c0e3bda049a9a38dad7104d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e2b4f102a6c626cdb30181271afc06d4') in 0.0126661 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_corner_plug.prefab
+  artifactKey: Guid(abf1f5179163bad469b298f28ca52e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_corner_plug.prefab using Guid(abf1f5179163bad469b298f28ca52e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fd915cf90d73694248a73b7718536371') in 0.0137053 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.892701 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Extended Primitives/Cylinder_16_extended.prefab
+  artifactKey: Guid(3f6d5a55a145f4f40bebd7d054c548f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Extended Primitives/Cylinder_16_extended.prefab using Guid(3f6d5a55a145f4f40bebd7d054c548f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '155c93cbde7d05a8acfc39e355acedef') in 0.0170122 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.022399 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/bulletin_board_small.prefab
+  artifactKey: Guid(d65adb88fb474aa488e3dca96d9ee071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/bulletin_board_small.prefab using Guid(d65adb88fb474aa488e3dca96d9ee071) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2ae3618603dd618b975ad684bc2fb886') in 0.0134767 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/cabinet_L_cutted.prefab
+  artifactKey: Guid(8c10b28a5dc86904db537e28568805a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/cabinet_L_cutted.prefab using Guid(8c10b28a5dc86904db537e28568805a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '75e399572fb854ea4ab844c1ebbdf4ce') in 0.0130929 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/console_screen.prefab
+  artifactKey: Guid(814f2f52d8dd87948a0fba9364aa412b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/console_screen.prefab using Guid(814f2f52d8dd87948a0fba9364aa412b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b5d2579916685caad3213e07076edaf') in 0.016532 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/decorative_plant_small.prefab
+  artifactKey: Guid(a4b101bd1cf6bc9478190c1aa0f3d52e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/decorative_plant_small.prefab using Guid(a4b101bd1cf6bc9478190c1aa0f3d52e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b61856b9302c7f8e94ccb4eb0b041f63') in 0.0338155 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/sign.prefab
+  artifactKey: Guid(48f0889733d556d4a927a13a99a7f434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/sign.prefab using Guid(48f0889733d556d4a927a13a99a7f434) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4490d0aa7e0eda803297e7bf72cc1f02') in 0.0132596 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/sing_small.prefab
+  artifactKey: Guid(fc67be85f7a8a16448d922881910dcf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/sing_small.prefab using Guid(fc67be85f7a8a16448d922881910dcf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cae88ada7ed2e154c7901b7c5db45eb0') in 0.0164132 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/floor_corner_ornament.prefab
+  artifactKey: Guid(0759e5b8616fa854dbb807a3ac19ec2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/floor_corner_ornament.prefab using Guid(0759e5b8616fa854dbb807a3ac19ec2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b5e6f0709a5f878b21687f63729558a4') in 0.0161759 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.794824 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Column/column_middle.prefab
+  artifactKey: Guid(736d23d832d564c42a6b81c9fefb19bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Prefabs/Decorative elements/Column/column_middle.prefab using Guid(736d23d832d564c42a6b81c9fefb19bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e19207712afe4f926df0469e2c5931c5') in 0.0164034 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3188 unused Assets / (1.4 MB). Loaded Objects now: 3930.
+Memory consumption went from 142.3 MB to 140.9 MB.
+Total: 7.502900 ms (FindLiveObjects: 0.568700 ms CreateObjectMapping: 0.270100 ms MarkObjects: 5.372200 ms  DeleteObjects: 1.290800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 11)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 11)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 12)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 12)
+Symbol file LoadedFromMemory doesn't match image C:\Users\amsar\Sobrevivencia\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\amsar\Sobrevivencia\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.625 seconds
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.712 seconds
+Domain Reload Profiling: 1333ms
+	BeginReloadAssembly (178ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (48ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (357ms)
+		LoadAssemblies (312ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (126ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (109ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (713ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (483ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (55ms)
+			ProcessInitializeOnLoadAttributes (391ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 1.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3193 unused Assets / (1.5 MB). Loaded Objects now: 3929.
+Memory consumption went from 143.8 MB to 142.3 MB.
+Total: 7.022600 ms (FindLiveObjects: 0.363600 ms CreateObjectMapping: 0.419800 ms MarkObjects: 4.611300 ms  DeleteObjects: 1.627300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 157.638862 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Doors/Door_Right_01.prefab
+  artifactKey: Guid(5d1b756973d9b43979538efa15d96725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Doors/Door_Right_01.prefab using Guid(5d1b756973d9b43979538efa15d96725) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '330c2f3f6770330a0e77744c8ccf6d14') in 0.2196298 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Doors/Vertical_Doors_Kit.prefab
+  artifactKey: Guid(ace79f6bf2f8949b0896b3d183802f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Doors/Vertical_Doors_Kit.prefab using Guid(ace79f6bf2f8949b0896b3d183802f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'be2bd609c30fc2f8c01ac3e19a3a97ca') in 0.0084568 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000035 seconds.
-  path: Assets/Pacotes/SciFi_Space_Soldier/Resources/Space_Soldier/Materials/M_Soldier_C_Torso.mat
-  artifactKey: Guid(6c647f2f3fc22124884c94e33905e92e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/SciFi_Space_Soldier/Resources/Space_Soldier/Materials/M_Soldier_C_Torso.mat using Guid(6c647f2f3fc22124884c94e33905e92e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dd32403bd58347a541720e5bd14770a1') in 0.022791 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Pacotes/SciFi_Space_Soldier/Resources/Space_Soldier/Materials/M_Soldier_B_Torso.mat
-  artifactKey: Guid(3e9beee87956dd6409048c37003411d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/SciFi_Space_Soldier/Resources/Space_Soldier/Materials/M_Soldier_B_Torso.mat using Guid(3e9beee87956dd6409048c37003411d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '819a28c4b7051125bf3091dc50e4b11a') in 0.0224703 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000092 seconds.
-  path: Assets/Pacotes/SciFi_Space_Soldier/Resources/Space_Soldier/Materials/M_Soldier_B_Legs.mat
-  artifactKey: Guid(a699ee56e43a36a4a93d521b97cc7cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/SciFi_Space_Soldier/Resources/Space_Soldier/Materials/M_Soldier_B_Legs.mat using Guid(a699ee56e43a36a4a93d521b97cc7cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3157e4f314ef26e40b8a6b0d49661962') in 0.0215559 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Doors/Horizontal_Doors_Kit.prefab
+  artifactKey: Guid(7aa8165393acd4c3ab5aaa3ad54bfb1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Doors/Horizontal_Doors_Kit.prefab using Guid(7aa8165393acd4c3ab5aaa3ad54bfb1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9965c788446bf04f696e54e54a78db15') in 0.0026576 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.958240 seconds.
-  path: Assets/Pacotes/SciFi_Space_Soldier/Resources/Space_Soldier/Meshes/Soldier_LOD1.FBX
-  artifactKey: Guid(c99537a5ec6872e42af9706f9a279e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/SciFi_Space_Soldier/Resources/Space_Soldier/Meshes/Soldier_LOD1.FBX using Guid(c99537a5ec6872e42af9706f9a279e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd384a47367f4209a1a4c06e78ccecf34') in 0.0588626 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 102
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Doors/Door_Vert_01.prefab
+  artifactKey: Guid(34300443486f64d6da09f6f748778306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Doors/Door_Vert_01.prefab using Guid(34300443486f64d6da09f6f748778306) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c35085d494f88d8eb9f7b65df0a1d932') in 0.0688475 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 43
 
 ========================================================================
 Received Import Request.
-  Time since last request: 32.269429 seconds.
-  path: Assets/Pacotes/SciFi_Space_Soldier/Resources/Space_Soldier/Meshes/Anims_Actions/Soldier@Use_Loop.FBX
-  artifactKey: Guid(2ca2f1c9ff1e927499c456c407381dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/SciFi_Space_Soldier/Resources/Space_Soldier/Meshes/Anims_Actions/Soldier@Use_Loop.FBX using Guid(2ca2f1c9ff1e927499c456c407381dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3eea6a169544e89c14be2a1b2453fb35') in 0.0037866 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 89
+  Time since last request: 2.617929 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Floors/Floor_Coin_01_Small.prefab
+  artifactKey: Guid(2504b53e39a2545538e6b5f5573f2bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Floors/Floor_Coin_01_Small.prefab using Guid(2504b53e39a2545538e6b5f5573f2bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f28ea7df540a98c5831d8100c382ff0a') in 0.0509141 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Floors/Floor_Third_02_Strip_2x6.prefab
+  artifactKey: Guid(738b55f9d75654dd2a1bbbed9d6fea19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Floors/Floor_Third_02_Strip_2x6.prefab using Guid(738b55f9d75654dd2a1bbbed9d6fea19) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1895b5b4bdab3d2700d6644baec6a166') in 0.0195394 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Floors/Floor_Descent_01.prefab
+  artifactKey: Guid(aae9037902a72479c9cf8e27eebf7df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Floors/Floor_Descent_01.prefab using Guid(aae9037902a72479c9cf8e27eebf7df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ed1c403de8178ace300300cf85942ce1') in 0.0717657 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 78
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Floors/Floor_Squared_02_6x6.prefab
+  artifactKey: Guid(e1e43b751e1c847fcb7618aace293dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Floors/Floor_Squared_02_6x6.prefab using Guid(e1e43b751e1c847fcb7618aace293dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f6aa3d6ebe96d042e6a25e3a2fbf128a') in 0.0739277 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 53
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Floors/Floor_Third_03_Strip_2x6.prefab
+  artifactKey: Guid(add2d9420be3544d89122cce02950ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Floors/Floor_Third_03_Strip_2x6.prefab using Guid(add2d9420be3544d89122cce02950ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e79aac4f960e1fd87042a6c21e5d5ad') in 0.021379 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Floors/Floor_Third_04_Strip_2x6.prefab
+  artifactKey: Guid(435d6afd33c8f2d41b41ea35f54b1c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Floors/Floor_Third_04_Strip_2x6.prefab using Guid(435d6afd33c8f2d41b41ea35f54b1c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e69d1152d032fb1efede7abc7d1299c3') in 0.0237445 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Floors/Floor_Third_01_Strip_2x6.prefab
+  artifactKey: Guid(2aad511a3bf674ee3a4d7577e87e930d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Floors/Floor_Third_01_Strip_2x6.prefab using Guid(2aad511a3bf674ee3a4d7577e87e930d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b2bb5e3cf28794bef73009ce1bdf41f6') in 0.0180268 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.694231 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Num_3.prefab
+  artifactKey: Guid(5c886e80a015c41f9b734fb22805cc49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Num_3.prefab using Guid(5c886e80a015c41f9b734fb22805cc49) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b7398f567fc78ca926aaf7fee78f7d43') in 0.0214024 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Symb_Arrow.prefab
+  artifactKey: Guid(39278bd2764254e72a9fe96217e4395c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Symb_Arrow.prefab using Guid(39278bd2764254e72a9fe96217e4395c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '396af0cf974424c4f68add1d054cf13d') in 0.0251688 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Num_4.prefab
+  artifactKey: Guid(42db52e32aff341159cd7c14da8c7c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Num_4.prefab using Guid(42db52e32aff341159cd7c14da8c7c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '828562cde6db424f6ad827e2ae66eb2c') in 0.0191525 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Num_7.prefab
+  artifactKey: Guid(6407cd45385174b4195aa6873614fdc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Num_7.prefab using Guid(6407cd45385174b4195aa6873614fdc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a4926a9ca179b79df386be5bb66a1993') in 0.025182 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Word_Tech.prefab
+  artifactKey: Guid(98fc5195d7af44ae68d3b554861ec279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Word_Tech.prefab using Guid(98fc5195d7af44ae68d3b554861ec279) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '543570f5e1fe35a7e7ee0b263479a2ab') in 0.020026 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Word_Exit.prefab
+  artifactKey: Guid(f6fa560c4f27f4153ace49338cd4c393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Word_Exit.prefab using Guid(f6fa560c4f27f4153ace49338cd4c393) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '596ac8377253b1c334adc0fabcb2f200') in 0.0221495 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Num_6.prefab
+  artifactKey: Guid(7439476009bbb482f9f569b3343ffcdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Num_6.prefab using Guid(7439476009bbb482f9f569b3343ffcdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9ad28c2927e81bf29556e061dc3c9a49') in 0.0276136 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.647463 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Console_01_Half.prefab
+  artifactKey: Guid(0bb9da675ed6e4cd4829f553f9ae44f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Console_01_Half.prefab using Guid(0bb9da675ed6e4cd4829f553f9ae44f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '79beb4abeab9fecd534e658950560632') in 0.0441344 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 34
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Gear_03_Half.prefab
+  artifactKey: Guid(96f31f9addab74c95b4a7aa93233e751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Gear_03_Half.prefab using Guid(96f31f9addab74c95b4a7aa93233e751) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '52a7b2fa70bcd21d0a77db2921b4f40f') in 0.0468921 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Simple_03_Long.prefab
+  artifactKey: Guid(7c640618751f24e19a758d31aaa0351b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Simple_03_Long.prefab using Guid(7c640618751f24e19a758d31aaa0351b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6edc20b6795927d2ddf0803f6f43a542') in 0.178064 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 60
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Simple_01_Coin.prefab
+  artifactKey: Guid(22fc62775f090453b8a270508d2df1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Simple_01_Coin.prefab using Guid(22fc62775f090453b8a270508d2df1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6df297a7fe17190a952d931e5aef159f') in 0.0555689 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 66
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Inclined_01_CoinRight_Half.prefab
+  artifactKey: Guid(30b181cf2bc374090ba5d715e09a7f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Inclined_01_CoinRight_Half.prefab using Guid(30b181cf2bc374090ba5d715e09a7f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6bedb0b8801272a3b0f976012d6399d1') in 0.1407261 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 51
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Up_01_Long.prefab
+  artifactKey: Guid(c51b37d9d63a14b1a92a490f9b9ae19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Up_01_Long.prefab using Guid(c51b37d9d63a14b1a92a490f9b9ae19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '115d1fcc62513a149b6762af47e94321') in 0.1534057 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 53
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Down_01_Long.prefab
+  artifactKey: Guid(47f3a16acd1eb4ac087d1e1fe523dc2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Down_01_Long.prefab using Guid(47f3a16acd1eb4ac087d1e1fe523dc2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ba91af3c1cefa39168fccd26ff80b49d') in 0.1376775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 47
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Simple_01_TurnShort_90.prefab
+  artifactKey: Guid(ed279349019c5455baddba5fd2e515ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Simple_01_TurnShort_90.prefab using Guid(ed279349019c5455baddba5fd2e515ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fa2e62bb803d99ae1efbd1a6378c1743') in 0.0875993 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 129
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Inclined_01_Coin.prefab
+  artifactKey: Guid(989ce3797ef264857a39c3da25296019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Inclined_01_Coin.prefab using Guid(989ce3797ef264857a39c3da25296019) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c1a8ace5f95b52372e998a7e36dc18c8') in 0.047861 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Inclined_01_Half.prefab
+  artifactKey: Guid(588955be0a3f24f3587555cad73fae83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Inclined_01_Half.prefab using Guid(588955be0a3f24f3587555cad73fae83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fc15f0dd7366c139da02fd46944a95ac') in 0.1220396 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 36
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Cube_01_Invert.prefab
+  artifactKey: Guid(509f5b8d2fbee44fa82ce9170626f6ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Cube_01_Invert.prefab using Guid(509f5b8d2fbee44fa82ce9170626f6ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '27cbf63e000add3411a7a92d17c14a43') in 0.1069474 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 42
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.482524 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/BubbleA.mat
+  artifactKey: Guid(acd70e3d797d64394900db4990d665b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/BubbleA.mat using Guid(acd70e3d797d64394900db4990d665b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9ecb65e57fb0dc379dfd1e4a766f82de') in 0.0910907 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/Glow_Low.mat
+  artifactKey: Guid(9954b3ca93ec84074bfcb882e476a45b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/Glow_Low.mat using Guid(9954b3ca93ec84074bfcb882e476a45b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1d721009bed91d4f4312170044b1930d') in 0.0162053 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/Cube_Light_B.mat
+  artifactKey: Guid(0287812dd5eaa4ffb92b1ff7cac029b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/Cube_Light_B.mat using Guid(0287812dd5eaa4ffb92b1ff7cac029b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eec7a7ce0c6a1f37d0cb2ca2e9058106') in 0.0129888 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server

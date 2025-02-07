@@ -15,7 +15,7 @@ C:/Users/amsar/Sobrevivencia
 -logFile
 Logs/AssetImportWorker12.log
 -srvPort
-53907
+50464
 -job-worker-count
 7
 -background-job-worker-count
@@ -58,12 +58,12 @@ C:/Users/amsar/Sobrevivencia
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [33784] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1691760628 [EditorId] 1691760628 [Version] 1048832 [Id] WindowsEditor(7,Marcos) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [33784] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1691760628 [EditorId] 1691760628 [Version] 1048832 [Id] WindowsEditor(7,Marcos) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [22196] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2680905013 [EditorId] 2680905013 [Version] 1048832 [Id] WindowsEditor(7,Marcos) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [22196] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2680905013 [EditorId] 2680905013 [Version] 1048832 [Id] WindowsEditor(7,Marcos) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.13 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.20f1 (0e25a174756c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Resources/UnitySubsystems
@@ -79,45 +79,45 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56172
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56716
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007101 seconds.
-- Loaded All Assemblies, in  0.528 seconds
+Registered in 0.006663 seconds.
+- Loaded All Assemblies, in  0.406 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.372 seconds
-Domain Reload Profiling: 897ms
-	BeginReloadAssembly (186ms)
+- Finished resetting the current domain, in  0.321 seconds
+Domain Reload Profiling: 724ms
+	BeginReloadAssembly (119ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (52ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (67ms)
-	LoadAllAssembliesAndSetupDomain (204ms)
-		LoadAssemblies (184ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (163ms)
+		LoadAssemblies (114ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (200ms)
-			TypeCache.Refresh (199ms)
-				TypeCache.ScanAssembly (180ms)
+		AnalyzeDomain (160ms)
+			TypeCache.Refresh (159ms)
+				TypeCache.ScanAssembly (145ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (373ms)
+	FinalizeReload (322ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (316ms)
+		SetupLoadedEditorAssemblies (267ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (11ms)
 			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (6ms)
-			ProcessInitializeOnLoadAttributes (238ms)
-			ProcessInitializeOnLoadMethodAttributes (57ms)
+			BeforeProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (188ms)
+			ProcessInitializeOnLoadMethodAttributes (58ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -128,229 +128,409 @@ Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\amsar\Sobrevivencia\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\amsar\Sobrevivencia\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Asset path could not be found for script compilation file '/Assets/Forst/Conifers [BOTD]/Installer/Editor/ConifersInstaller.cs'
-Asset path could not be found for script compilation file '/Assets/Forst/Conifers [BOTD]/Installer/Editor/LaunchConifersInstaller.cs'
-Asset path could not be found for script compilation file '/Assets/Forst/CTI Runtime Components/CTI Runtime Components BIRP/Scripts/Editor/CTI_AdvancedEdgeFluttering.cs'
-Asset path could not be found for script compilation file '/Assets/Forst/CTI Runtime Components/CTI Runtime Components BIRP/Scripts/Editor/CTI_DetailsEnum.cs'
-Asset path could not be found for script compilation file '/Assets/Forst/CTI Runtime Components/CTI Runtime Components BIRP/Scripts/Editor/CTI_ShaderGUI.cs'
-- Loaded All Assemblies, in  0.993 seconds
-Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.861 seconds
+Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.703 seconds
-Domain Reload Profiling: 1691ms
-	BeginReloadAssembly (445ms)
+- Finished resetting the current domain, in  0.722 seconds
+Domain Reload Profiling: 1578ms
+	BeginReloadAssembly (386ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (32ms)
-	RebuildCommonClasses (35ms)
+	RebuildCommonClasses (34ms)
 	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (42ms)
-	LoadAllAssembliesAndSetupDomain (454ms)
-		LoadAssemblies (329ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (379ms)
+		LoadAssemblies (282ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (198ms)
-			TypeCache.Refresh (169ms)
-				TypeCache.ScanAssembly (155ms)
-			BuildScriptInfoCaches (21ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (703ms)
+		AnalyzeDomain (168ms)
+			TypeCache.Refresh (144ms)
+				TypeCache.ScanAssembly (130ms)
+			BuildScriptInfoCaches (18ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (722ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (489ms)
+		SetupLoadedEditorAssemblies (526ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
+			InitializePlatformSupportModulesInManaged (3ms)
 			SetLoadedEditorAssemblies (4ms)
 			BeforeProcessingInitializeOnLoad (40ms)
-			ProcessInitializeOnLoadAttributes (410ms)
+			ProcessInitializeOnLoadAttributes (449ms)
 			ProcessInitializeOnLoadMethodAttributes (23ms)
 			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.28 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (14ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 1.05 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 96 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3219 unused Assets / (1.5 MB). Loaded Objects now: 3895.
-Memory consumption went from 162.6 MB to 161.1 MB.
-Total: 6.978800 ms (FindLiveObjects: 0.560600 ms CreateObjectMapping: 0.294800 ms MarkObjects: 4.889000 ms  DeleteObjects: 1.233200 ms)
+Unloading 85 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3195 unused Assets / (1.5 MB). Loaded Objects now: 3882.
+Memory consumption went from 143.6 MB to 142.2 MB.
+Total: 7.058100 ms (FindLiveObjects: 0.422500 ms CreateObjectMapping: 0.401300 ms MarkObjects: 4.966600 ms  DeleteObjects: 1.266400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 731117.511016 seconds.
-  path: Assets/Pacotes/NatureStarterKit2/Scene/SecondaryTerrain.asset
-  artifactKey: Guid(7f570b916f436aa4c9d4676e57349fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/NatureStarterKit2/Scene/SecondaryTerrain.asset using Guid(7f570b916f436aa4c9d4676e57349fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)
-=================================================================
-	Native Crash Reporting
-=================================================================
-Got a UNKNOWN while executing native code. This usually indicates
-a fatal error in the mono runtime or one of the native libraries 
-used by your application.
-=================================================================
+  Time since last request: 16104.003793 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Props/Airing_01.prefab
+  artifactKey: Guid(d8b78681a0006415a824f4e6273244dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Props/Airing_01.prefab using Guid(d8b78681a0006415a824f4e6273244dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9bffdaed3d987dc0375ef8e145781dfa') in 0.2281272 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 36
 
-=================================================================
-	Managed Stacktrace:
-=================================================================
-=================================================================
-Crash!!!
-SymInit: Symbol-SearchPath: 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Mono;.;C:\Users\amsar\Sobrevivencia;C:\Users\amsar\Sobrevivencia\Library\BurstCache\JIT;C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor;C:\WINDOWS;C:\WINDOWS\system32;', symOptions: 534, UserName: 'amsar'
-OS-Version: 10.0.0
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\Unity.exe:Unity.exe (00007FF665250000), size: 184320 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2023.2.20.9633
-C:\WINDOWS\SYSTEM32\ntdll.dll:ntdll.dll (00007FFE48B10000), size: 2191360 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4541
-C:\WINDOWS\System32\KERNEL32.DLL:KERNEL32.DLL (00007FFE480E0000), size: 802816 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4391
-C:\WINDOWS\System32\KERNELBASE.dll:KERNELBASE.dll (00007FFE45FC0000), size: 3907584 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4751
-C:\WINDOWS\System32\USER32.dll:USER32.dll (00007FFE47F30000), size: 1761280 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4541
-C:\WINDOWS\System32\win32u.dll:win32u.dll (00007FFE46750000), size: 155648 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4601
-C:\WINDOWS\System32\GDI32.dll:GDI32.dll (00007FFE48930000), size: 167936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4036
-C:\WINDOWS\System32\gdi32full.dll:gdi32full.dll (00007FFE464A0000), size: 1159168 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4391
-C:\WINDOWS\System32\msvcp_win.dll:msvcp_win.dll (00007FFE466B0000), size: 630784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.3374
-C:\WINDOWS\System32\ucrtbase.dll:ucrtbase.dll (00007FFE46380000), size: 1118208 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.3593
-C:\WINDOWS\System32\IMM32.DLL:IMM32.DLL (00007FFE487B0000), size: 200704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.3374
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\Unity.dll:Unity.dll (00007FFDC0710000), size: 80285696 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2023.2.20.9633
-C:\WINDOWS\System32\CRYPT32.dll:CRYPT32.dll (00007FFE45DD0000), size: 1466368 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4541
-C:\WINDOWS\System32\ADVAPI32.dll:ADVAPI32.dll (00007FFE46800000), size: 729088 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4391
-C:\WINDOWS\System32\msvcrt.dll:msvcrt.dll (00007FFE47160000), size: 684032 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.0.22621.2506
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\s3tcompress.dll:s3tcompress.dll (00007FFE41EA0000), size: 180224 (result: 0), SymType: '-deferred-', PDB: ''
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\libfbxsdk.dll:libfbxsdk.dll (00007FFDDF890000), size: 10063872 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2020.3.4.0
-C:\WINDOWS\System32\sechost.dll:sechost.dll (00007FFE468C0000), size: 684032 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4541
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\etccompress.dll:etccompress.dll (00007FFDE36E0000), size: 5070848 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\System32\bcrypt.dll:bcrypt.dll (00007FFE46680000), size: 163840 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4746
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\ispc_texcomp.dll:ispc_texcomp.dll (00007FFDF2370000), size: 1826816 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\System32\RPCRT4.dll:RPCRT4.dll (00007FFE489B0000), size: 1130496 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4249
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\compress_bc7e.dll:compress_bc7e.dll (00007FFDFC8C0000), size: 1433600 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\System32\ole32.dll:ole32.dll (00007FFE46A20000), size: 1724416 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4746
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\FreeImage.dll:FreeImage.dll (0000000180000000), size: 5783552 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.18.0.0
-C:\WINDOWS\System32\combase.dll:combase.dll (00007FFE48350000), size: 3739648 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4746
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\WinPixEventRuntime.dll:WinPixEventRuntime.dll (00007FFE41E80000), size: 53248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.0.2201.24001
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\umbraoptimizer64.dll:umbraoptimizer64.dll (00007FFDF1CA0000), size: 1187840 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\System32\WS2_32.dll:WS2_32.dll (00007FFE481B0000), size: 462848 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4746
-C:\WINDOWS\System32\SETUPAPI.dll:SETUPAPI.dll (00007FFE46CE0000), size: 4669440 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.2506
-C:\WINDOWS\System32\SHELL32.dll:SHELL32.dll (00007FFE474D0000), size: 8884224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4746
-C:\WINDOWS\SYSTEM32\d3d11.dll:d3d11.dll (00007FFE3EE90000), size: 2453504 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4541
-C:\WINDOWS\SYSTEM32\d3d12.dll:d3d12.dll (00007FFE41880000), size: 155648 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4541
-C:\WINDOWS\System32\SHLWAPI.dll:SHLWAPI.dll (00007FFE488D0000), size: 385024 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4541
-C:\WINDOWS\SYSTEM32\dwmapi.dll:dwmapi.dll (00007FFE43500000), size: 176128 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4541
-C:\WINDOWS\SYSTEM32\dxgi.dll:dxgi.dll (00007FFE433F0000), size: 1011712 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4036
-C:\WINDOWS\SYSTEM32\HID.DLL:HID.DLL (00007FFE445D0000), size: 57344 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
-C:\WINDOWS\System32\OLEAUT32.dll:OLEAUT32.dll (00007FFE487F0000), size: 880640 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.3672
-C:\WINDOWS\System32\WINTRUST.dll:WINTRUST.dll (00007FFE45F40000), size: 466944 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4746
-C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL:IPHLPAPI.DLL (00007FFE44830000), size: 184320 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
-C:\WINDOWS\SYSTEM32\OPENGL32.dll:OPENGL32.dll (00007FFDF35C0000), size: 1048576 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4541
-C:\WINDOWS\SYSTEM32\MSVCP140.dll:MSVCP140.dll (00007FFE26860000), size: 577536 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.42.34433.0
-C:\WINDOWS\SYSTEM32\VCRUNTIME140.dll:VCRUNTIME140.dll (00007FFE26970000), size: 122880 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.42.34433.0
-C:\WINDOWS\SYSTEM32\VCRUNTIME140_1.dll:VCRUNTIME140_1.dll (00007FFE266B0000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.42.34433.0
-C:\WINDOWS\SYSTEM32\WINHTTP.dll:WINHTTP.dll (00007FFE40800000), size: 1269760 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4541
-C:\WINDOWS\SYSTEM32\WINMM.dll:WINMM.dll (00007FFE41230000), size: 212992 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4541
-C:\WINDOWS\SYSTEM32\GLU32.dll:GLU32.dll (00007FFE28C20000), size: 184320 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.2506
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\NativeProxyHelper.dll:NativeProxyHelper.dll (00007FFDF1480000), size: 1789952 (result: 0), SymType: '-deferred-', PDB: ''
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\SketchUpAPI.dll:SketchUpAPI.dll (00007FFDD9AC0000), size: 8990720 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 23.0.0.0
-C:\WINDOWS\SYSTEM32\VERSION.dll:VERSION.dll (00007FFE3D770000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
-C:\WINDOWS\SYSTEM32\WSOCK32.dll:WSOCK32.dll (00007FFE0B8B0000), size: 36864 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
-C:\WINDOWS\SYSTEM32\Secur32.dll:Secur32.dll (00007FFE44BA0000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\SketchUpCommonPreferences.dll:SketchUpCommonPreferences.dll (00007FFE15530000), size: 499712 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 23.0.0.0
-C:\WINDOWS\SYSTEM32\dxcore.dll:dxcore.dll (00007FFE433B0000), size: 225280 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4541
-C:\WINDOWS\SYSTEM32\SSPICLI.DLL:SSPICLI.DLL (00007FFE45030000), size: 274432 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.3810
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\OpenRL.dll:OpenRL.dll (000001C4A41A0000), size: 12779520 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.5.0.2907
-C:\WINDOWS\SYSTEM32\MSVCP100.dll:MSVCP100.dll (000000005BB10000), size: 622592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.325
-C:\WINDOWS\SYSTEM32\MSVCR100.dll:MSVCR100.dll (000000005B9C0000), size: 860160 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.325
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\embree.dll:embree.dll (00007FFDD64E0000), size: 16711680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.14.0.0
-C:\WINDOWS\SYSTEM32\cfgmgr32.DLL:cfgmgr32.DLL (00007FFE459D0000), size: 319488 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.2506
-C:\WINDOWS\SYSTEM32\MSWSOCK.DLL:MSWSOCK.DLL (00007FFE45240000), size: 430080 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.2506
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\tbb.dll:tbb.dll (00007FFE154E0000), size: 303104 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2020.3.2022.1111
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\OpenRL_pthread.dll:OpenRL_pthread.dll (000001C4A4DD0000), size: 61440 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.9.0.0
-C:\WINDOWS\SYSTEM32\MSASN1.dll:MSASN1.dll (00007FFE45980000), size: 73728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.2506
-C:\WINDOWS\System32\bcryptprimitives.dll:bcryptprimitives.dll (00007FFE46780000), size: 503808 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4317
-C:\WINDOWS\SYSTEM32\kernel.appcore.dll:kernel.appcore.dll (00007FFE44DD0000), size: 98304 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.3958
-C:\WINDOWS\system32\uxtheme.dll:uxtheme.dll (00007FFE43240000), size: 724992 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4541
-C:\WINDOWS\SYSTEM32\windows.storage.dll:windows.storage.dll (00007FFE43CC0000), size: 9474048 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4746
-C:\WINDOWS\SYSTEM32\wintypes.dll:wintypes.dll (00007FFE43B80000), size: 1306624 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4746
-C:\WINDOWS\System32\SHCORE.dll:SHCORE.dll (00007FFE48230000), size: 1024000 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4541
-C:\WINDOWS\SYSTEM32\profapi.dll:profapi.dll (00007FFE45D00000), size: 176128 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4541
-C:\WINDOWS\system32\IconCodecService.dll:IconCodecService.dll (00007FFE157C0000), size: 36864 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
-C:\WINDOWS\SYSTEM32\WindowsCodecs.dll:WindowsCodecs.dll (00007FFE43050000), size: 1769472 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4541
-C:\WINDOWS\System32\clbcatq.dll:clbcatq.dll (00007FFE486F0000), size: 720896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2001.12.10941.16384
-C:\WINDOWS\System32\netprofm.dll:netprofm.dll (00007FFE42700000), size: 491520 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.3527
-C:\WINDOWS\System32\npmproxy.dll:npmproxy.dll (00007FFE3DA70000), size: 98304 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.3527
-C:\WINDOWS\System32\NSI.dll:NSI.dll (00007FFE487A0000), size: 36864 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4746
-C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL:dhcpcsvc6.DLL (00007FFE412D0000), size: 102400 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.2506
-C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL:dhcpcsvc.DLL (00007FFE40DC0000), size: 126976 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.2506
-C:\WINDOWS\SYSTEM32\DNSAPI.dll:DNSAPI.dll (00007FFE448A0000), size: 1056768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4746
-C:\WINDOWS\system32\napinsp.dll:napinsp.dll (00007FFE20600000), size: 94208 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
-C:\WINDOWS\system32\pnrpnsp.dll:pnrpnsp.dll (00007FFE205E0000), size: 110592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
-C:\WINDOWS\System32\winrnr.dll:winrnr.dll (00007FFE205C0000), size: 69632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
-C:\WINDOWS\system32\wshbth.dll:wshbth.dll (00007FFE40270000), size: 86016 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.3958
-C:\WINDOWS\system32\nlansp_c.dll:nlansp_c.dll (00007FFE20590000), size: 159744 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4541
-C:\WINDOWS\System32\fwpuclnt.dll:fwpuclnt.dll (00007FFE3FD80000), size: 536576 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4249
-C:\Windows\System32\rasadhlp.dll:rasadhlp.dll (00007FFE3C5E0000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\NVUnityPlugin.DLL:NVUnityPlugin.DLL (00007FFDF0790000), size: 1519616 (result: 0), SymType: '-deferred-', PDB: ''
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\Data\Tools\astcenc-avx2.dll:astcenc-avx2.dll (00007FFE0ED30000), size: 364544 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\System32\MMDevApi.dll:MMDevApi.dll (00007FFE34460000), size: 647168 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4111
-C:\WINDOWS\System32\DEVOBJ.dll:DEVOBJ.dll (00007FFE459A0000), size: 180224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.2506
-C:\WINDOWS\SYSTEM32\directxdatabasehelper.dll:directxdatabasehelper.dll (00007FFE3BE50000), size: 299008 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4541
-C:\WINDOWS\System32\DriverStore\FileRepository\nvacig.inf_amd64_7515a4a0d57b9816\nvldumdx.dll:nvldumdx.dll (00007FFDE8BC0000), size: 770048 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 31.0.15.3734
-C:\WINDOWS\SYSTEM32\cryptnet.dll:cryptnet.dll (00007FFE40230000), size: 204800 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
-C:\WINDOWS\SYSTEM32\drvstore.dll:drvstore.dll (00007FFE38E70000), size: 1449984 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4541
-C:\WINDOWS\SYSTEM32\wldp.dll:wldp.dll (00007FFE45590000), size: 311296 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4746
-C:\WINDOWS\SYSTEM32\cryptbase.dll:cryptbase.dll (00007FFE45450000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4746
-C:\WINDOWS\System32\imagehlp.dll:imagehlp.dll (00007FFE46980000), size: 126976 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
-C:\WINDOWS\SYSTEM32\CRYPTSP.dll:CRYPTSP.dll (00007FFE45490000), size: 110592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.3672
-C:\WINDOWS\system32\rsaenh.dll:rsaenh.dll (00007FFE44D30000), size: 217088 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4249
-C:\WINDOWS\System32\DriverStore\FileRepository\nvacig.inf_amd64_7515a4a0d57b9816\nvwgf2umx.dll:nvwgf2umx.dll (00007FFDA23A0000), size: 99475456 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 31.0.15.3734
-C:\WINDOWS\system32\nvspcap64.dll:nvspcap64.dll (00007FFD806B0000), size: 2854912 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.21.0.36
-C:\WINDOWS\SYSTEM32\ntmarta.dll:ntmarta.dll (00007FFE44EE0000), size: 212992 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
-C:\WINDOWS\System32\DriverStore\FileRepository\nvacig.inf_amd64_7515a4a0d57b9816\Display.NvContainer\MessageBus.dll:MessageBus.dll (00007FFE28370000), size: 7565312 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.22.2758.1620
-C:\WINDOWS\system32\wbem\wbemprox.dll:wbemprox.dll (00007FFE39F10000), size: 65536 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.3672
-C:\WINDOWS\SYSTEM32\wbemcomn.dll:wbemcomn.dll (00007FFE39E90000), size: 524288 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.2506
-C:\WINDOWS\system32\wbem\wbemsvc.dll:wbemsvc.dll (00007FFE39080000), size: 81920 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.3672
-C:\WINDOWS\system32\wbem\fastprox.dll:fastprox.dll (00007FFE390A0000), size: 1015808 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.4541
-C:\WINDOWS\SYSTEM32\amsi.dll:amsi.dll (00007FFE381B0000), size: 118784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.3527
-C:\WINDOWS\SYSTEM32\USERENV.dll:USERENV.dll (00007FFE452F0000), size: 163840 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.3527
-C:\Program Files\Bitdefender\Bitdefender Security\bdamsi\dlls_267059357120000000\antimalware_provider64.dll:antimalware_provider64.dll (00007FFE37DA0000), size: 831488 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 4.0.24.1
-C:\WINDOWS\SYSTEM32\opencl.dll:opencl.dll (00007FFDEB080000), size: 1490944 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.0.3.0
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\radeonrays.dll:radeonrays.dll (00007FFDFDDC0000), size: 557056 (result: 0), SymType: '-deferred-', PDB: ''
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\Data\MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll:mono-2.0-bdwgc.dll (00007FFDD4040000), size: 10756096 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\SYSTEM32\dbghelp.dll:dbghelp.dll (00007FFE38380000), size: 2301952 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.3593
+========================================================================
+Received Import Request.
+  Time since last request: 3.013962 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Num_0.prefab
+  artifactKey: Guid(3cb7cbe74f36649b2a01b51a54feabba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Num_0.prefab using Guid(3cb7cbe74f36649b2a01b51a54feabba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6f5d528899c04372e2d0aa12cd42b538') in 0.0262941 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
 
-========== OUTPUTTING STACK TRACE ==================
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Sign_Caution_02.prefab
+  artifactKey: Guid(f934feb22fdce4763bd4158da7dd43ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Sign_Caution_02.prefab using Guid(f934feb22fdce4763bd4158da7dd43ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6e777cbdd11d0ca4de8fcd64fb57f55a') in 0.020596 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
 
-0x00007FFDC15F6753 (Unity) core::hash_set<core::pair<core::basic_string<char,core::StringStorageDefault<char> > const ,Hash128,1>,core::hash_pair<core::hash<core::basic_string<char,core::StringStorageDefault<char> > >,core::basic_string<char,core::StringStorageDefault<char> >,Hash128>,core::equal_pair<std::equal_to<core::basic_string<char,core::StringStorageDefault<char> > >,core::basic_string<char,core::StringStorageDefault<char> >,Hash128> >::lookup<core::basic_string<char,core::StringStorageDefault<char> >,core::equal_pair<std::equal_to<core::basic_string<char,core::StringStorageDefault<char> > >,core::basic_string<char,core::StringStorageDefault<char> >,Hash128> >
-0x00007FFDC2B25DCC (Unity) GuidReservations::Reserve
-0x00007FFDC2B16FB7 (Unity) ImportAtPathV2
-0x00007FFDC2ADAB62 (Unity) AssetDatabase::ImportAtPath
-0x00007FFDC1DB670E (Unity) SplatDatabase::CreateTerrainLayersFromDeprecatedSplats
-0x00007FFDC1DB4CE9 (Unity) SplatDatabase::ConvertSplatsToTerrainLayers
-0x00007FFDC1DB122C (Unity) SplatDatabase::AwakeFromLoad
-0x00007FFDC1DE58A6 (Unity) TerrainData::AwakeFromLoad
-0x00007FFDC172DE71 (Unity) AwakeFromLoadQueue::InvokePersistentManagerAwake
-0x00007FFDC172EEC3 (Unity) AwakeFromLoadQueue::PersistentManagerSingleQueueAwakeFromLoad
-0x00007FFDC172EB0D (Unity) AwakeFromLoadQueue::PersistentManagerAwakeFromLoad_NoChecks
-0x00007FFDC1702A91 (Unity) PersistentManager::IntegrateAllThreadedObjects
-0x00007FFDC17032F0 (Unity) PersistentManager::LoadAndIntegrateAllPreallocatedObjects
-0x00007FFDC17077E7 (Unity) PersistentManager::ReadObject
-0x00007FFDC2AB3879 (Unity) WritePreviews
-0x00007FFDC2AB12E4 (Unity) PreviewImporter::GenerateAssetData
-0x00007FFDC2BADCC4 (Unity) ImportToObjects
-0x00007FFDC2BACB46 (Unity) ImportAsset
-0x00007FFDC2B4A51E (Unity) AssetImportWorker::Import
-0x00007FFDC2AFD8EE (Unity) <lambda_f45a4f3b39c8aa94a47caff7e1af23c3>::operator()
-0x00007FFDC2BE0EAE (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)>,asio::io_context::basic_executor_type<std::allocator<void>,0> >::do_complete
-0x00007FFDC2BCDB5E (Unity) asio::detail::win_iocp_io_context::do_one
-0x00007FFDC2BCF6A4 (Unity) asio::detail::win_iocp_io_context::run
-0x00007FFDC2BDF64C (Unity) IOService::Run
-0x00007FFDC2B27846 (Unity) RunAssetImportWorkerClientV2
-0x00007FFDC2B2790B (Unity) RunAssetImporterV2
-0x00007FFDC2341718 (Unity) Application::InitializeProject
-0x00007FFDC278EB3E (Unity) UnityMain
-0x00007FF665252CDA (Unity) __scrt_common_main_seh
-0x00007FFE480F259D (KERNEL32) BaseThreadInitThunk
-0x00007FFE48B6AF38 (ntdll) RtlUserThreadStart
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Word_Deck.prefab
+  artifactKey: Guid(8572a30ed49eb4c80af2ed797458815b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Word_Deck.prefab using Guid(8572a30ed49eb4c80af2ed797458815b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e33fcc1f28bd61a9902b57f019f65aea') in 0.022893 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
 
-========== END OF STACKTRACE ===========
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Word_Zone.prefab
+  artifactKey: Guid(01cc9322b0a464f5580c775f02bbaaab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Word_Zone.prefab using Guid(01cc9322b0a464f5580c775f02bbaaab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '36c6b066bce3b5801c9dbb63e2453069') in 0.0215525 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
 
-A crash has been intercepted by the crash handler. For call stack and other details, see the latest crash report generated in:
- * C:/Users/amsar/AppData/Local/Temp/Unity/Editor/Crashes
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Num_5.prefab
+  artifactKey: Guid(b20c11b870d8e4cb781fce27ac788924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Num_5.prefab using Guid(b20c11b870d8e4cb781fce27ac788924) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '49098415fd4740233e6e3228d93f0f2c') in 0.0199392 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Word_Level.prefab
+  artifactKey: Guid(e54a4f2d0e2874f848a4b13ae4e748f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Word_Level.prefab using Guid(e54a4f2d0e2874f848a4b13ae4e748f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2f64a10fd04087b9c1dda7e32ffd7cab') in 0.0227835 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Word_Area.prefab
+  artifactKey: Guid(efc9f3d32f51342d9ac8665afc174897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Word_Area.prefab using Guid(efc9f3d32f51342d9ac8665afc174897) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3f183744d6295cf94034148f715cae9d') in 0.0275949 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.656279 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Column_01_Big.prefab
+  artifactKey: Guid(c046375e7bf1c42cdac74810855eae68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Column_01_Big.prefab using Guid(c046375e7bf1c42cdac74810855eae68) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd2cbb6ee37db8504319f40208d43c35b') in 0.0720536 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Pipes_01_Large.prefab
+  artifactKey: Guid(0156d82925fa4477e95bd73f098c846b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Pipes_01_Large.prefab using Guid(0156d82925fa4477e95bd73f098c846b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fc3a996db4c00c945d1f019bce699b9f') in 0.0603578 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 35
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Simple_05_Long.prefab
+  artifactKey: Guid(a3a28df7da6da4deea03a2a2f34a54ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Simple_05_Long.prefab using Guid(a3a28df7da6da4deea03a2a2f34a54ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd943b1124c1f80fe36488ec2416305c7') in 0.1218708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 54
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Simple_04_Long.prefab
+  artifactKey: Guid(70875bfee8728450189136f0533aabe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Simple_04_Long.prefab using Guid(70875bfee8728450189136f0533aabe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0c1145d67ac0ecc2b0e05a87f74400e5') in 0.1658809 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 64
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Pipes_02_Large.prefab
+  artifactKey: Guid(49c6cada7ed484c158ec10a1e2745a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Pipes_02_Large.prefab using Guid(49c6cada7ed484c158ec10a1e2745a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8ee75de6e4225790912eaeabfb2304bd') in 0.0532916 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 35
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Inclined_02_CoinRight.prefab
+  artifactKey: Guid(33403cd954ab747f9989f98b1e34c139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Inclined_02_CoinRight.prefab using Guid(33403cd954ab747f9989f98b1e34c139) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8ac8a33406d3395dc32579d8d83fac31') in 0.2163304 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 62
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Simple_01_InvertCoin.prefab
+  artifactKey: Guid(d9496913daf444c5c9205545c44d78c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Simple_01_InvertCoin.prefab using Guid(d9496913daf444c5c9205545c44d78c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b1315f96635704e71885da0275925f08') in 0.1326846 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 39
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Inclined_01_CoinRight.prefab
+  artifactKey: Guid(8ddec44bef7c945959c9f2ed57e86299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Inclined_01_CoinRight.prefab using Guid(8ddec44bef7c945959c9f2ed57e86299) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '46ea9aebf6f596fe90f7ac5b63903d01') in 0.1556274 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 60
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Inclined_02_CoinLeft.prefab
+  artifactKey: Guid(3c2481cf5d79f4b829f77b002e8e5b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Inclined_02_CoinLeft.prefab using Guid(3c2481cf5d79f4b829f77b002e8e5b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '68db4ba6759a92839c85fabe78199163') in 0.1816288 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 64
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.404550 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others
+  artifactKey: Guid(c251e0519f95441ccbb222ed8764116f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others using Guid(c251e0519f95441ccbb222ed8764116f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5bf440ebc64d73bce0ca92e69d75dc42') in 0.0008963 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.050791 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/Anim_01_8x2.mat
+  artifactKey: Guid(88aa664b6951e4fc1b5fa68d7afa9021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/Anim_01_8x2.mat using Guid(88aa664b6951e4fc1b5fa68d7afa9021) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '04599e3956995f48c97ad363ffab0984') in 0.0410732 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/Glow_Strong.mat
+  artifactKey: Guid(02802d43834c649e88e7bdc90aa248a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/Glow_Strong.mat using Guid(02802d43834c649e88e7bdc90aa248a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c82fb3f84afad2b5e5704695eff7c745') in 0.0282895 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/Glass.mat
+  artifactKey: Guid(3b73c95214dfc4876a164f473ce71277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/Glass.mat using Guid(3b73c95214dfc4876a164f473ce71277) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4fcd2082119cfb29e4d082e368cc1406') in 0.0738069 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.365956 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Example_01.unity
+  artifactKey: Guid(8f1a01e4b1a374aa6bfe472517a8a56e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Example_01.unity using Guid(8f1a01e4b1a374aa6bfe472517a8a56e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dc137983cddacbbd3947d8bee4dcba30') in 0.011579 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.616720 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Textures
+  artifactKey: Guid(a959991a936f5e6438ca4bd7a9ecebdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Textures using Guid(a959991a936f5e6438ca4bd7a9ecebdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '36ca56ae4209e947dc03a2250f92e174') in 0.0110107 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.131550 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Floors
+  artifactKey: Guid(cd2ff047c257ae248a94c7a9d70928ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Floors using Guid(cd2ff047c257ae248a94c7a9d70928ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '154ec1abee7acdce813b837dc2089a81') in 0.0112823 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.070331 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Floors/Floor_A.prefab
+  artifactKey: Guid(b2f96746c6005c64888263f64272a556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Floors/Floor_A.prefab using Guid(b2f96746c6005c64888263f64272a556) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '29291d03fefb5c1c7eb0797b8ec7afc5') in 0.0170222 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.805045 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Doorways/Doorway_A.prefab
+  artifactKey: Guid(10f6c197dbc5b3d4bb207a1bd7921eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Doorways/Doorway_A.prefab using Guid(10f6c197dbc5b3d4bb207a1bd7921eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '506092990e70ba8064e8c146f91a7ce3') in 0.0189769 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Doorways/Doorway_C.prefab
+  artifactKey: Guid(3faf544bbf9cefb4da44238798338db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Doorways/Doorway_C.prefab using Guid(3faf544bbf9cefb4da44238798338db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0f3b3c75ec5d005159c1149a1c51e298') in 0.0166766 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.223804 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Doors/Door_A.prefab
+  artifactKey: Guid(4aa5a7ef56dd26f4d8cdad18e6dd51d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Doors/Door_A.prefab using Guid(4aa5a7ef56dd26f4d8cdad18e6dd51d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '135a88178e51319e540151706968935d') in 0.0178193 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Doors/Door_D.prefab
+  artifactKey: Guid(6a07feca79d15f84d83a75c6432bd05c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Doors/Door_D.prefab using Guid(6a07feca79d15f84d83a75c6432bd05c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c187bd6e126e52aaced67788b93a40c5') in 0.0178602 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.994618 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Grunge_A.prefab
+  artifactKey: Guid(fcbd3be90bc4c7f4080b171503d710dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Grunge_A.prefab using Guid(fcbd3be90bc4c7f4080b171503d710dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '94bdc03c5c00dbcc9ed85f8006a3ff76') in 0.0319636 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001862 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Hay_A.prefab
+  artifactKey: Guid(db376d84db5f60748b98e9a47b6770ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Hay_A.prefab using Guid(db376d84db5f60748b98e9a47b6770ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4d4e940ca3a96d4663e18c1083e32bcf') in 0.0163663 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Grunge_D.prefab
+  artifactKey: Guid(463ff9a36ad3b9048ad14b062ffedd2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Grunge_D.prefab using Guid(463ff9a36ad3b9048ad14b062ffedd2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ed292eef3e28aec8f9313953c9866998') in 0.0147569 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Hay_C.prefab
+  artifactKey: Guid(277581e3138a61f46878277a7d68a675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Hay_C.prefab using Guid(277581e3138a61f46878277a7d68a675) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8922084cc0a45964e567890fdb8cbc02') in 0.0164049 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Grunge_F.prefab
+  artifactKey: Guid(cd2bddb9961304741bb667a4a663f581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Grunge_F.prefab using Guid(cd2bddb9961304741bb667a4a663f581) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f637bc3d96bfc04c4051f92359278920') in 0.0187929 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Wax.prefab
+  artifactKey: Guid(7de209ee5e8595e41887a1dedd915a11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Wax.prefab using Guid(7de209ee5e8595e41887a1dedd915a11) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '29de9fbb51ff3e79c38fbd8f5a05570a') in 0.013416 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.257075 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Arches/Arch_A.prefab
+  artifactKey: Guid(de3b8c31d809a0442bdf5e22edaf92be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Arches/Arch_A.prefab using Guid(de3b8c31d809a0442bdf5e22edaf92be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3ddb633ce8fc11a84c9b01b3a3e59ef3') in 0.027942 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.151464 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Stairs/Stairs_A.prefab
+  artifactKey: Guid(b5e6d0f89d317b146a5e063b6c80a8fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Stairs/Stairs_A.prefab using Guid(b5e6d0f89d317b146a5e063b6c80a8fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f2df4fa5d97cc91bf7b08d83a8814d5b') in 0.0206282 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Stairs/Stairs_C.prefab
+  artifactKey: Guid(ad0f936da1b94df47a67bc558a9ccff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Stairs/Stairs_C.prefab using Guid(ad0f936da1b94df47a67bc558a9ccff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '41d565000bafe7ebc26eff152df3a791') in 0.019832 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Stairs/Stairs_F.prefab
+  artifactKey: Guid(7c84b5794225d8a4ca0500ec37701101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Stairs/Stairs_F.prefab using Guid(7c84b5794225d8a4ca0500ec37701101) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b60b42b89544ab2adf3acdff5029dd61') in 0.0182865 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.928970 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Dungeon_Tunnel_A.prefab
+  artifactKey: Guid(18a3408f13d3db04f8f6c199a67986b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Dungeon_Tunnel_A.prefab using Guid(18a3408f13d3db04f8f6c199a67986b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b39cb0feac025621b6600c7b73499acd') in 0.0122749 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Wall_B_Corner.prefab
+  artifactKey: Guid(01311b99708e82145a709f95952e18b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Wall_B_Corner.prefab using Guid(01311b99708e82145a709f95952e18b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c6beccab60d267c13c4291e3ab09935f') in 0.0139933 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Wall_B.prefab
+  artifactKey: Guid(ce73a35450ff20d4ab05c1f0c3cec2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Wall_B.prefab using Guid(ce73a35450ff20d4ab05c1f0c3cec2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '892e95a60a727737be8beb20877e15d8') in 0.0135528 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Wall_D.prefab
+  artifactKey: Guid(62f525a5c612fb04d9041a1e55c345c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Wall_D.prefab using Guid(62f525a5c612fb04d9041a1e55c345c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a5120bbbcf80749d2c0ab34ce6e10530') in 0.0170995 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Wall_A_Corner.prefab
+  artifactKey: Guid(24579a71f306fa349abdad24a69e4d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Wall_A_Corner.prefab using Guid(24579a71f306fa349abdad24a69e4d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '67567ed57abb013a55ca5857cd78a4f3') in 0.0120973 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Wall_E.prefab
+  artifactKey: Guid(b3680b2b693885140a0abe782d406308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Wall_E.prefab using Guid(b3680b2b693885140a0abe782d406308) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ea3511dea3ebe21adf2c1fbea45f70b0') in 0.0193484 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+

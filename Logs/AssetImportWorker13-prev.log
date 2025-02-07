@@ -15,7 +15,7 @@ C:/Users/amsar/Sobrevivencia
 -logFile
 Logs/AssetImportWorker13.log
 -srvPort
-53907
+50464
 -job-worker-count
 7
 -background-job-worker-count
@@ -58,12 +58,12 @@ C:/Users/amsar/Sobrevivencia
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [33340] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1489228871 [EditorId] 1489228871 [Version] 1048832 [Id] WindowsEditor(7,Marcos) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [33340] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1489228871 [EditorId] 1489228871 [Version] 1048832 [Id] WindowsEditor(7,Marcos) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [16180] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1591574411 [EditorId] 1591574411 [Version] 1048832 [Id] WindowsEditor(7,Marcos) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [16180] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1591574411 [EditorId] 1591574411 [Version] 1048832 [Id] WindowsEditor(7,Marcos) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 1.52 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.15 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.20f1 (0e25a174756c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Resources/UnitySubsystems
@@ -79,45 +79,45 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56672
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56128
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005990 seconds.
-- Loaded All Assemblies, in  0.354 seconds
+Registered in 0.007267 seconds.
+- Loaded All Assemblies, in  0.389 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.312 seconds
-Domain Reload Profiling: 662ms
-	BeginReloadAssembly (96ms)
+- Finished resetting the current domain, in  0.319 seconds
+Domain Reload Profiling: 705ms
+	BeginReloadAssembly (111ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (37ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (55ms)
-	LoadAllAssembliesAndSetupDomain (151ms)
-		LoadAssemblies (92ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (156ms)
+		LoadAssemblies (107ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (148ms)
-			TypeCache.Refresh (147ms)
-				TypeCache.ScanAssembly (135ms)
+		AnalyzeDomain (153ms)
+			TypeCache.Refresh (151ms)
+				TypeCache.ScanAssembly (139ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (312ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (320ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (259ms)
+		SetupLoadedEditorAssemblies (267ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (11ms)
 			SetLoadedEditorAssemblies (5ms)
 			BeforeProcessingInitializeOnLoad (5ms)
-			ProcessInitializeOnLoadAttributes (187ms)
-			ProcessInitializeOnLoadMethodAttributes (51ms)
+			ProcessInitializeOnLoadAttributes (184ms)
+			ProcessInitializeOnLoadMethodAttributes (60ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -128,82 +128,377 @@ Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\amsar\Sobrevivencia\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\amsar\Sobrevivencia\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Asset path could not be found for script compilation file '/Assets/Forst/Conifers [BOTD]/Installer/Editor/ConifersInstaller.cs'
-Asset path could not be found for script compilation file '/Assets/Forst/Conifers [BOTD]/Installer/Editor/LaunchConifersInstaller.cs'
-Asset path could not be found for script compilation file '/Assets/Forst/CTI Runtime Components/CTI Runtime Components BIRP/Scripts/Editor/CTI_AdvancedEdgeFluttering.cs'
-Asset path could not be found for script compilation file '/Assets/Forst/CTI Runtime Components/CTI Runtime Components BIRP/Scripts/Editor/CTI_DetailsEnum.cs'
-Asset path could not be found for script compilation file '/Assets/Forst/CTI Runtime Components/CTI Runtime Components BIRP/Scripts/Editor/CTI_ShaderGUI.cs'
-- Loaded All Assemblies, in  0.831 seconds
-Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.875 seconds
+Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.637 seconds
-Domain Reload Profiling: 1462ms
-	BeginReloadAssembly (378ms)
+- Finished resetting the current domain, in  0.721 seconds
+Domain Reload Profiling: 1591ms
+	BeginReloadAssembly (394ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (34ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (35ms)
 	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (361ms)
-		LoadAssemblies (275ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (383ms)
+		LoadAssemblies (289ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (156ms)
-			TypeCache.Refresh (132ms)
-				TypeCache.ScanAssembly (120ms)
+		AnalyzeDomain (168ms)
+			TypeCache.Refresh (145ms)
+				TypeCache.ScanAssembly (131ms)
 			BuildScriptInfoCaches (17ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (637ms)
+	FinalizeReload (722ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (448ms)
+		SetupLoadedEditorAssemblies (520ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (39ms)
-			ProcessInitializeOnLoadAttributes (373ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
+			BeforeProcessingInitializeOnLoad (41ms)
+			ProcessInitializeOnLoadAttributes (438ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
 			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (14ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 96 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3219 unused Assets / (1.5 MB). Loaded Objects now: 3913.
-Memory consumption went from 172.0 MB to 170.5 MB.
-Total: 6.545100 ms (FindLiveObjects: 0.406200 ms CreateObjectMapping: 0.234100 ms MarkObjects: 4.504000 ms  DeleteObjects: 1.399300 ms)
+Unloading 85 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3195 unused Assets / (1.6 MB). Loaded Objects now: 3882.
+Memory consumption went from 143.6 MB to 142.0 MB.
+Total: 6.850300 ms (FindLiveObjects: 0.368100 ms CreateObjectMapping: 0.418700 ms MarkObjects: 4.803600 ms  DeleteObjects: 1.258900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 731333.522554 seconds.
-  path: Assets/Pacotes/NatureStarterKit2/Materials/bark02.mat
-  artifactKey: Guid(aa9fcb8764ab3324aa575a948d139c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/NatureStarterKit2/Materials/bark02.mat using Guid(aa9fcb8764ab3324aa575a948d139c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '83b70879a6b56c2b04ae1d33595465a4') in 0.3578355 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 16107.253162 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Num_2.prefab
+  artifactKey: Guid(9f2ca9b3f7ea44cc09ba28c0d52eb538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Num_2.prefab using Guid(9f2ca9b3f7ea44cc09ba28c0d52eb538) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '27d9dc87e7e14a1e18a9e88e4d3784ea') in 0.1417758 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Pacotes/NatureStarterKit2/Materials/bush01.mat
-  artifactKey: Guid(216a7e882dab7d745a4fc6ccb3774f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/NatureStarterKit2/Materials/bush01.mat using Guid(216a7e882dab7d745a4fc6ccb3774f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '730d76a23bdfa7c85bab6c66fc8128fa') in 0.1636759 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Sign_Caution_01.prefab
+  artifactKey: Guid(bac58d81e51784118bfc20a8cb5242e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Symbols/Sign_Caution_01.prefab using Guid(bac58d81e51784118bfc20a8cb5242e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dd0ab907ec51def4fba5b05ce225b353') in 0.034904 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Pacotes/NatureStarterKit2/Materials/sky.mat
-  artifactKey: Guid(7105c6e31fe1afc4b804e755b0561048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/NatureStarterKit2/Materials/sky.mat using Guid(7105c6e31fe1afc4b804e755b0561048) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3c31f888ec4bf82ce917f377f019fb0e') in 0.0395097 seconds
+  Time since last request: 0.647354 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Bed_01.prefab
+  artifactKey: Guid(d9ba6e4a0b3764a1bb987416e9114f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Bed_01.prefab using Guid(d9ba6e4a0b3764a1bb987416e9114f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '396f22df92fd552d49278882b9ba951b') in 0.1108536 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Table_01.prefab
+  artifactKey: Guid(818e532131a9a4d9ab96846c72c25182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Table_01.prefab using Guid(818e532131a9a4d9ab96846c72c25182) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e0a06be8ae6ecb8da42959a6daeeecca') in 0.0437998 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 27
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Gear_01_Half.prefab
+  artifactKey: Guid(8bb10558cac674d6b80301b2a954ed67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Gear_01_Half.prefab using Guid(8bb10558cac674d6b80301b2a954ed67) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '74c10cabf10cc28af1c5c0945d72f088') in 0.0652067 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 42
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Inclined_02_Coin.prefab
+  artifactKey: Guid(499859e5622b54c9ca6e44760a2fcde2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Inclined_02_Coin.prefab using Guid(499859e5622b54c9ca6e44760a2fcde2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ff21977d8b5855a05725dc428b901a9f') in 0.1937811 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 36
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Cube_01_Coin.prefab
+  artifactKey: Guid(40ced70de82ce4f0bbd865136b5c7fa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Cube_01_Coin.prefab using Guid(40ced70de82ce4f0bbd865136b5c7fa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7b01177e7ed2eefeef651d7e9c5135c7') in 0.046413 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Cube_01_Round.prefab
+  artifactKey: Guid(c023e316aa0a9452e815aaef9f5e61eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Cube_01_Round.prefab using Guid(c023e316aa0a9452e815aaef9f5e61eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ed451dbdb1b88635a1441b67d3bb85cb') in 0.0923867 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 36
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Inclined_01_CoinLeft_Half.prefab
+  artifactKey: Guid(b4952e1bdb24344eaaf75e446dec127b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Inclined_01_CoinLeft_Half.prefab using Guid(b4952e1bdb24344eaaf75e446dec127b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c572fa47af68dae3c2e2f0debdd74a1e') in 0.1237366 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 51
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Console_01_Large.prefab
+  artifactKey: Guid(48d2973b7a25b451ea97a6eaf756f8cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Console_01_Large.prefab using Guid(48d2973b7a25b451ea97a6eaf756f8cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '142a0880d0910ebbcdb9e73941ad45b3') in 0.0679155 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 52
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Simple_01_Squared.prefab
+  artifactKey: Guid(b436ae5c615194675b30036b30e568c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Simple_01_Squared.prefab using Guid(b436ae5c615194675b30036b30e568c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '38ab1ed12abdfcfecae485025fec4b9c') in 0.1204154 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 42
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Simple_01_Half.prefab
+  artifactKey: Guid(8a0669be60aaf43bc84e95a66b4f5248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Simple_01_Half.prefab using Guid(8a0669be60aaf43bc84e95a66b4f5248) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8764b1097a27caea4bfc6560bbf43e35') in 0.0871285 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 48
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Cube_02_Flat.prefab
+  artifactKey: Guid(e3ed4d0b20e65464b91bb2c9ca32ba31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Cube_02_Flat.prefab using Guid(e3ed4d0b20e65464b91bb2c9ca32ba31) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b32e239f7cc1f77c9dd0d5272a9d543e') in 0.0760097 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Gear_02_Half.prefab
+  artifactKey: Guid(94aa6bb10a2084bbb842e5fe1b92578f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Prefabs/Walls/Wall_Gear_02_Half.prefab using Guid(94aa6bb10a2084bbb842e5fe1b92578f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0373cff83bae54d461c78ad47a9de805') in 0.0519966 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 35
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.533858 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/Anim_03_8x8.mat
+  artifactKey: Guid(010cb2df7780442309585c0188e8f8bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/Anim_03_8x8.mat using Guid(010cb2df7780442309585c0188e8f8bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '20663192dbd41928d4be10457fa86a4e') in 0.0471275 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/Cube_Light_A.mat
+  artifactKey: Guid(7f6d3eb3c0eaf40b7aa82bd3e54c59e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/Cube_Light_A.mat using Guid(7f6d3eb3c0eaf40b7aa82bd3e54c59e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b51b38c711a6894c2999013882a3e5b3') in 0.0324547 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/Smoke.mat
+  artifactKey: Guid(dbccf7877db7842e289b393d8dc3609f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/Smoke.mat using Guid(dbccf7877db7842e289b393d8dc3609f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b12bffebbd0659243826cbb693064e39') in 0.011143 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/Pluton.mat
+  artifactKey: Guid(3c70c55a836774cbc8ae3985c62ba250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/Pluton.mat using Guid(3c70c55a836774cbc8ae3985c62ba250) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eceaf28e436d5141bdd90d3c1170f304') in 0.013271 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/Footage2.mat
+  artifactKey: Guid(c1c6977a6078e484194f6865e8f0a631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/_Others/Footage2.mat using Guid(c1c6977a6078e484194f6865e8f0a631) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e3004586a544c90c01a2bc040ff80b99') in 0.1107974 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 67.143904 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Floors/Floor_B.prefab
+  artifactKey: Guid(c8fcb67cb3d648b4b87d500ece16b15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Floors/Floor_B.prefab using Guid(c8fcb67cb3d648b4b87d500ece16b15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6daf5f6503ce6436f549a96000ce7fbb') in 0.0166068 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Floors/Floor_C.prefab
+  artifactKey: Guid(f5507bdcafa59ee4796ef124f9fa7d3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Floors/Floor_C.prefab using Guid(f5507bdcafa59ee4796ef124f9fa7d3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9029ae19b3e79ee6176fa8313ba2dd43') in 0.0123693 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.791713 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Doorways/Doorway_B.prefab
+  artifactKey: Guid(d82e2c8f3a0a74d47b5cc1efbc1b13c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Doorways/Doorway_B.prefab using Guid(d82e2c8f3a0a74d47b5cc1efbc1b13c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '09f3b317b7bd90626718f26d8ff090e0') in 0.0312306 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.229748 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Doors/Door_B.prefab
+  artifactKey: Guid(4f13c956f2c771542a07a197a4d6fdf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Doors/Door_B.prefab using Guid(4f13c956f2c771542a07a197a4d6fdf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cff883f2cb713c8ca01279e3c4c429d0') in 0.0193864 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 35
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Doors/Door_C.prefab
+  artifactKey: Guid(b0e0e89eed1bb7f4982f8a6092a384b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Doors/Door_C.prefab using Guid(b0e0e89eed1bb7f4982f8a6092a384b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9f93be88b2daf56b33571d6af8bf810b') in 0.0210136 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 35
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.989921 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Grunge_B.prefab
+  artifactKey: Guid(8b03b78473aa7d8438af631387982438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Grunge_B.prefab using Guid(8b03b78473aa7d8438af631387982438) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '31321c6b72106dcd14243ed4d8755ad4') in 0.0316922 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001564 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Grunge_C.prefab
+  artifactKey: Guid(10bc6d9fae2413142a4f49825af0487a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Grunge_C.prefab using Guid(10bc6d9fae2413142a4f49825af0487a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2a517180aa061c3680668824295e3848') in 0.0162166 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Hay_B.prefab
+  artifactKey: Guid(5562165546ff14f45bea34769748c3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Hay_B.prefab using Guid(5562165546ff14f45bea34769748c3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e80291b8deea2a59255762e2f216c479') in 0.0142629 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Hay_D.prefab
+  artifactKey: Guid(a0e26983dde4ea24d8cef87db524be41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Hay_D.prefab using Guid(a0e26983dde4ea24d8cef87db524be41) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eccaee6c978ff8e8f06b6ab5cd74999d') in 0.0181802 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Grunge_E.prefab
+  artifactKey: Guid(697d5f4c5ba05044b85072365842d0dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Decals/Grunge_E.prefab using Guid(697d5f4c5ba05044b85072365842d0dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dfd845dadc0285c6b01f6cb00f04b784') in 0.0181649 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.272243 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Arches/Arch_B.prefab
+  artifactKey: Guid(6ed801d9e01258a469e4ac74492f5e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Arches/Arch_B.prefab using Guid(6ed801d9e01258a469e4ac74492f5e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fdfe8abd67d0d6bfcdd2a2b6937f74a1') in 0.0277109 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Arches/Arch_C.prefab
+  artifactKey: Guid(01f3efff708b43041823d39100c09be2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Arches/Arch_C.prefab using Guid(01f3efff708b43041823d39100c09be2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c167285143b6a117a925e7e1b9ddc04e') in 0.0178006 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.135039 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Stairs/Stairs_B.prefab
+  artifactKey: Guid(34af40ea0a9739c4abbf145cd8d8ec19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Stairs/Stairs_B.prefab using Guid(34af40ea0a9739c4abbf145cd8d8ec19) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8e80f3cb8da7b8c0fe1af069f14389e0') in 0.0191944 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Stairs/Stairs_D.prefab
+  artifactKey: Guid(d460f9d98afa7634199641174bd537b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Stairs/Stairs_D.prefab using Guid(d460f9d98afa7634199641174bd537b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4837b07165af8f2f1ef004bbe72088b3') in 0.0187064 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Stairs/Stairs_E.prefab
+  artifactKey: Guid(5fafd51f70faff24c83b1fb395bd34ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Stairs/Stairs_E.prefab using Guid(5fafd51f70faff24c83b1fb395bd34ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9b82a594f81729f12283ee7c36085c75') in 0.0176267 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.930099 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Roundabout_Continuation.prefab
+  artifactKey: Guid(77764f3a8cc8f57439dedb2107f1a89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Roundabout_Continuation.prefab using Guid(77764f3a8cc8f57439dedb2107f1a89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '899f757386347747ec28f4c9018c8715') in 0.0116655 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Wall_A_Roundabout.prefab
+  artifactKey: Guid(57823a6a1276b094c8239dc3e66b32dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Wall_A_Roundabout.prefab using Guid(57823a6a1276b094c8239dc3e66b32dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8b5d83710023b309e03fd633e1a8199a') in 0.0135051 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Wall_B_Roundabout.prefab
+  artifactKey: Guid(ada1b397440f00841ad3806f33308774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Wall_B_Roundabout.prefab using Guid(ada1b397440f00841ad3806f33308774) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6097f52860b5d07d1721cbfce4aae944') in 0.0153314 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Sewer_Tunnel_B.prefab
+  artifactKey: Guid(cf6bc68452c25054fb498f2ea44db0b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Sewer_Tunnel_B.prefab using Guid(cf6bc68452c25054fb498f2ea44db0b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '901080ef9fcc346bf3e283504f777421') in 0.0124197 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Wall_C.prefab
+  artifactKey: Guid(a06d34869919f8646b564dcd7350f9aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Wall_C.prefab using Guid(a06d34869919f8646b564dcd7350f9aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a97262236f7b9839995fe867f216c22b') in 0.014235 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Sewer_Tunnel_C.prefab
+  artifactKey: Guid(6c445886a6d4798459acbb61e15ea1d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Sewer_Tunnel_C.prefab using Guid(6c445886a6d4798459acbb61e15ea1d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c49f5bbac5b159b27de946f926eaf44') in 0.01464 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Wall_A.prefab
+  artifactKey: Guid(91d652779ec7140488b6b8e360497937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Prefabs/Walls/Wall_A.prefab using Guid(91d652779ec7140488b6b8e360497937) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '224b20b4d8cdb1ebc786d9c332edfdfb') in 0.0120006 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+

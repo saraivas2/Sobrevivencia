@@ -15,7 +15,7 @@ C:/Users/amsar/Sobrevivencia
 -logFile
 Logs/AssetImportWorker6.log
 -srvPort
-53907
+50464
 -job-worker-count
 7
 -background-job-worker-count
@@ -58,12 +58,12 @@ C:/Users/amsar/Sobrevivencia
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [30968] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2587450769 [EditorId] 2587450769 [Version] 1048832 [Id] WindowsEditor(7,Marcos) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [30968] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2587450769 [EditorId] 2587450769 [Version] 1048832 [Id] WindowsEditor(7,Marcos) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [10796] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3331589991 [EditorId] 3331589991 [Version] 1048832 [Id] WindowsEditor(7,Marcos) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [10796] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3331589991 [EditorId] 3331589991 [Version] 1048832 [Id] WindowsEditor(7,Marcos) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 1.66 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.31 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.20f1 (0e25a174756c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Resources/UnitySubsystems
@@ -79,45 +79,45 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56464
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56888
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005565 seconds.
-- Loaded All Assemblies, in  0.325 seconds
+Registered in 0.008333 seconds.
+- Loaded All Assemblies, in  0.405 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.277 seconds
-Domain Reload Profiling: 599ms
-	BeginReloadAssembly (92ms)
+- Finished resetting the current domain, in  0.345 seconds
+Domain Reload Profiling: 747ms
+	BeginReloadAssembly (115ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (135ms)
-		LoadAssemblies (88ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (65ms)
+	LoadAllAssembliesAndSetupDomain (170ms)
+		LoadAssemblies (109ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (133ms)
-			TypeCache.Refresh (131ms)
-				TypeCache.ScanAssembly (120ms)
+		AnalyzeDomain (167ms)
+			TypeCache.Refresh (165ms)
+				TypeCache.ScanAssembly (151ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (277ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (346ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (229ms)
+		SetupLoadedEditorAssemblies (287ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (5ms)
-			ProcessInitializeOnLoadAttributes (165ms)
-			ProcessInitializeOnLoadMethodAttributes (45ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (6ms)
+			ProcessInitializeOnLoadAttributes (205ms)
+			ProcessInitializeOnLoadMethodAttributes (57ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -128,177 +128,710 @@ Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\amsar\Sobrevivencia\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\amsar\Sobrevivencia\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Asset path could not be found for script compilation file '/Assets/Forst/Conifers [BOTD]/Installer/Editor/ConifersInstaller.cs'
-Asset path could not be found for script compilation file '/Assets/Forst/Conifers [BOTD]/Installer/Editor/LaunchConifersInstaller.cs'
-Asset path could not be found for script compilation file '/Assets/Forst/CTI Runtime Components/CTI Runtime Components BIRP/Scripts/Editor/CTI_AdvancedEdgeFluttering.cs'
-Asset path could not be found for script compilation file '/Assets/Forst/CTI Runtime Components/CTI Runtime Components BIRP/Scripts/Editor/CTI_DetailsEnum.cs'
-Asset path could not be found for script compilation file '/Assets/Forst/CTI Runtime Components/CTI Runtime Components BIRP/Scripts/Editor/CTI_ShaderGUI.cs'
-- Loaded All Assemblies, in  0.818 seconds
-Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.321 seconds
+Refreshing native plugins compatible for Editor in 0.98 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.772 seconds
-Domain Reload Profiling: 1585ms
-	BeginReloadAssembly (352ms)
+- Finished resetting the current domain, in  0.720 seconds
+Domain Reload Profiling: 2034ms
+	BeginReloadAssembly (722ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (379ms)
-		LoadAssemblies (279ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (495ms)
+		LoadAssemblies (390ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (167ms)
-			TypeCache.Refresh (142ms)
-				TypeCache.ScanAssembly (129ms)
-			BuildScriptInfoCaches (18ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (773ms)
+		AnalyzeDomain (189ms)
+			TypeCache.Refresh (162ms)
+				TypeCache.ScanAssembly (146ms)
+			BuildScriptInfoCaches (19ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (721ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (525ms)
+		SetupLoadedEditorAssemblies (511ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (6ms)
+			SetLoadedEditorAssemblies (4ms)
 			BeforeProcessingInitializeOnLoad (42ms)
-			ProcessInitializeOnLoadAttributes (431ms)
-			ProcessInitializeOnLoadMethodAttributes (30ms)
-			AfterProcessingInitializeOnLoad (12ms)
+			ProcessInitializeOnLoadAttributes (427ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 1.69 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (12ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 96 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3219 unused Assets / (1.9 MB). Loaded Objects now: 3890.
-Memory consumption went from 161.6 MB to 159.7 MB.
-Total: 11.016200 ms (FindLiveObjects: 0.483700 ms CreateObjectMapping: 0.588000 ms MarkObjects: 7.527700 ms  DeleteObjects: 2.412700 ms)
+Unloading 86 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3199 unused Assets / (12.9 MB). Loaded Objects now: 3887.
+Memory consumption went from 144.4 MB to 131.5 MB.
+Total: 9.806000 ms (FindLiveObjects: 0.395700 ms CreateObjectMapping: 0.422100 ms MarkObjects: 7.000100 ms  DeleteObjects: 1.986900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 729326.130039 seconds.
-  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Sounds/Machin_Loop.wav
-  artifactKey: Guid(284c97ab4ab954a0d9c8de221d392040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Sounds/Machin_Loop.wav using Guid(284c97ab4ab954a0d9c8de221d392040) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd2f154983ee5cfbe54e445e148246c04') in 0.1105949 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 388.021266 seconds.
-  path: Assets/Nave.prefab
-  artifactKey: Guid(f19027952eeb31d419693cea1e9af771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nave.prefab using Guid(f19027952eeb31d419693cea1e9af771) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '55ac8318f0b36606599c7bdf50fcc586') in 1.2539073 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18302
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.793419 seconds.
-  path: Assets/Prefabs/Nave.prefab
-  artifactKey: Guid(475eeb757b1abf7479a7a8f967c66be2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Nave.prefab using Guid(475eeb757b1abf7479a7a8f967c66be2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2fdf44e9fa34f133cf9988fbac74db8d') in 0.6497707 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18302
-
-========================================================================
-Received Import Request.
-  Time since last request: 29.777601 seconds.
-  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit/Lighting Settings.lighting
-  artifactKey: Guid(40e6d3b13eda4d04182a6f1a24c4dd22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit/Lighting Settings.lighting using Guid(40e6d3b13eda4d04182a6f1a24c4dd22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)LightingSettings: switching bake backend from 1 to 2.
- -> (artifact id: '77fc130ebce33c2b4a4b85c2e569cb40') in 0.0039665 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.460571 seconds.
-  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit/Example_01
-  artifactKey: Guid(20f5ed4ea69bacf49b845fca10bc18f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit/Example_01 using Guid(20f5ed4ea69bacf49b845fca10bc18f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b353cff8da69a58f415bd6c116aab54b') in 0.0005868 seconds
+  Time since last request: 12676.052474 seconds.
+  path: Assets/Pacotes/Spiders
+  artifactKey: Guid(1de53fa6dbb31f5448cfdf1a1da6d5c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Spiders using Guid(1de53fa6dbb31f5448cfdf1a1da6d5c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '849bb9671f97c20a4cf7d42f9c67c0e3') in 0.0073518 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.194224 seconds.
-  path: Assets/Pacotes/_TerrainAutoUpgrade/layer_ground02ddfc8d7f3483abd.terrainlayer
-  artifactKey: Guid(01fbea888ddfbe64d8530a25954a1254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/_TerrainAutoUpgrade/layer_ground02ddfc8d7f3483abd.terrainlayer using Guid(01fbea888ddfbe64d8530a25954a1254) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cd38e41e218ef2bce17a87d94cb8c8ac') in 0.0269172 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Pacotes/_TerrainAutoUpgrade/layer_ground012023054508611406.terrainlayer
-  artifactKey: Guid(83e1b812b21d04d4ba07b04ce638ee50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/_TerrainAutoUpgrade/layer_ground012023054508611406.terrainlayer using Guid(83e1b812b21d04d4ba07b04ce638ee50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6eea084672343d24635a1ad40169676e') in 0.0113422 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.272746 seconds.
-  path: Assets/Pacotes/ArvisMag_Assets/SpaceShuttle
-  artifactKey: Guid(97b46d46169a8764186b557caf9d3954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/ArvisMag_Assets/SpaceShuttle using Guid(97b46d46169a8764186b557caf9d3954) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2d0a3d0f061c6068b4124515bd34342a') in 0.0007592 seconds
+  Time since last request: 2155.005802 seconds.
+  path: Assets/DanteVoss/Space_Soldier/Meshes/Anims_RootMotion
+  artifactKey: Guid(437f34968fa58134d9528877e8da0b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DanteVoss/Space_Soldier/Meshes/Anims_RootMotion using Guid(437f34968fa58134d9528877e8da0b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9a72e21aa96d62b176761de12791b500') in 0.000914 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.064041 seconds.
-  path: Assets/Pacotes/ArvisMag_Assets/SpaceShuttle/SpaceShuttle_01.prefab
-  artifactKey: Guid(b271505711828fd4e9719f1b97a0922a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/ArvisMag_Assets/SpaceShuttle/SpaceShuttle_01.prefab using Guid(b271505711828fd4e9719f1b97a0922a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8a50daa56a4b68b9ddddf0e10d3d9e80') in 0.2241858 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+  Time since last request: 195.131530 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/HD_Alpha_01_Norm.mat
+  artifactKey: Guid(77d7f8e60510c41d6aa696d014220acf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/HD_Alpha_01_Norm.mat using Guid(77d7f8e60510c41d6aa696d014220acf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '801ed8677fed1583de19da6b1141015a') in 0.1877477 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 21.245793 seconds.
-  path: Assets/Pacotes/ArvisMag_Assets/SpaceShuttle/Obj
-  artifactKey: Guid(2843b30defbae824b999919b284a90e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/ArvisMag_Assets/SpaceShuttle/Obj using Guid(2843b30defbae824b999919b284a90e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '30d7d1fb9690c397217e6a2b769de615') in 0.0007308 seconds
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/HD_Wall_07_Norm.mat
+  artifactKey: Guid(c54408d86de964ef49bf0899c4299987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/Materials/HD_Wall_07_Norm.mat using Guid(c54408d86de964ef49bf0899c4299987) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd77246e867921d85d9c8cc94757a957b') in 0.1076205 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.105277 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models
+  artifactKey: Guid(7fc242d33d76c1d469ea5bbe6484a463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models using Guid(7fc242d33d76c1d469ea5bbe6484a463) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '65f5e7ad0cce6aa1ee202a1cc096143a') in 0.000743 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.052720 seconds.
-  path: Assets/Pacotes/ArvisMag_Assets/SpaceShuttle/Obj/Ship_01_ColorMap.png
-  artifactKey: Guid(e99ee3ea4b044e04db1d31719206385e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/ArvisMag_Assets/SpaceShuttle/Obj/Ship_01_ColorMap.png using Guid(e99ee3ea4b044e04db1d31719206385e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '235d5e9841f7fa9771b9fa9ef7d2c762') in 0.0157219 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.804197 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Bush1
+  artifactKey: Guid(e9ae7e8b1194e6142ac694ee67077f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Bush1 using Guid(e9ae7e8b1194e6142ac694ee67077f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76d240311bbe359031b9e2ebcf39b27d') in 0.011319 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.008317 seconds.
-  path: Assets/Pacotes/ArvisMag_Assets/SpaceShuttle/Obj/Ship_01_NormalMap.png
-  artifactKey: Guid(2bb21ae21debf0149a7181c02651d138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/ArvisMag_Assets/SpaceShuttle/Obj/Ship_01_NormalMap.png using Guid(2bb21ae21debf0149a7181c02651d138) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '78daa09303bcf8267772b66e5369a31a') in 0.0165789 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 87.536943 seconds.
+  path: Assets/SkyBox
+  artifactKey: Guid(a70402290299bc8429bfa002f2ad7943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkyBox using Guid(a70402290299bc8429bfa002f2ad7943) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ad99e20e8e4a4e3ccbf7ff69f8aece5c') in 0.0005734 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Pacotes/ArvisMag_Assets/SpaceShuttle/Obj/SpaceShuttle_01.fbx
-  artifactKey: Guid(1c43257c3c2b67241adbe1cb13eb5305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/ArvisMag_Assets/SpaceShuttle/Obj/SpaceShuttle_01.fbx using Guid(1c43257c3c2b67241adbe1cb13eb5305) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '92846f2ec16e965011a0b25d61f6edeb') in 0.0302746 seconds
+  Time since last request: 6.977868 seconds.
+  path: Assets/Pacotes/_TerrainAutoUpgrade
+  artifactKey: Guid(bfda34ccb2437674fa72bc8d1e1734d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_TerrainAutoUpgrade using Guid(bfda34ccb2437674fa72bc8d1e1734d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd1f4a7db2a2043d6f58c8eab9d9ef144') in 0.0009872 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.714177 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Scripts/Behaviours
+  artifactKey: Guid(c98d8f8ff95704c46904e53bf3e60ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Scripts/Behaviours using Guid(c98d8f8ff95704c46904e53bf3e60ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f864f1b6586fbb9e2aa950ca167371f4') in 0.0006425 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.996276 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Scripts/Behaviours/FlyCameraBehaviour.cs
+  artifactKey: Guid(06c4022882cf6374d8c6e4f42719e4cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Scripts/Behaviours/FlyCameraBehaviour.cs using Guid(06c4022882cf6374d8c6e4f42719e4cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0a441c96a2aaf937fdf40624c93385c6') in 0.0009568 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.183874 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Scripts/Managers/InterfaceManager.cs
+  artifactKey: Guid(be8983ab5ee92854d91da1a23f697d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Scripts/Managers/InterfaceManager.cs using Guid(be8983ab5ee92854d91da1a23f697d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12c8efe57f6f00775fba66127568487f') in 0.0009004 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.928558 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Scripts/Managers/SceneSwitchManager.cs
+  artifactKey: Guid(8fcabe67151d8d0409aeb81adb8c71f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Scripts/Managers/SceneSwitchManager.cs using Guid(8fcabe67151d8d0409aeb81adb8c71f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b0658b5d354b1bbf007cffcc1328c56b') in 0.0009054 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.284269 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Scenes/DemonstrationDay
+  artifactKey: Guid(cd74497396fb68f43ad8fdb060e63d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Scenes/DemonstrationDay using Guid(cd74497396fb68f43ad8fdb060e63d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c78bc07a920c4f9024eca092de33f0a7') in 0.0009874 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.352785 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinBuilding3/ruin_building_3.fbx
+  artifactKey: Guid(f9f7b2cf20a3582448f0a365db3cfa67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinBuilding3/ruin_building_3.fbx using Guid(f9f7b2cf20a3582448f0a365db3cfa67) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76217889af4ba41b1d4979c7c31de1a7') in 0.0604075 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.845055 seconds.
-  path: Assets/Pacotes/ArvisMag_Assets/SpaceShuttle/Obj/Materials
-  artifactKey: Guid(782cf4a022fdf6d49bf2e297149605aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/ArvisMag_Assets/SpaceShuttle/Obj/Materials using Guid(782cf4a022fdf6d49bf2e297149605aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f80d01fa3fa348620717968b8e90803c') in 0.000562 seconds
+  Time since last request: 6.282763 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinBuilding4/ruin_building_4.fbx
+  artifactKey: Guid(64ea61dedaa3d004badaa5d66ee56c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinBuilding4/ruin_building_4.fbx using Guid(64ea61dedaa3d004badaa5d66ee56c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd6059db89bb4a3df311e483d9f418237') in 0.0274715 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.581861 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinBuilding5/ruin_building_5.fbx
+  artifactKey: Guid(e64cc1444032ae547a827b331b1f7d75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinBuilding5/ruin_building_5.fbx using Guid(e64cc1444032ae547a827b331b1f7d75) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dfdb04df11cf6c8a803ae759cad396f2') in 0.020075 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.202045 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinBuilding6/ruin_building_6.fbx
+  artifactKey: Guid(1b71b7148cef9f847afdb0cc6a058a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinBuilding6/ruin_building_6.fbx using Guid(1b71b7148cef9f847afdb0cc6a058a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '965f8a28c94eb424dfd73cef6fb5229a') in 0.0106331 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.138177 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/CementBlock1/cement_block_1.prefab
+  artifactKey: Guid(34ba554529e664e4cb49476c4390b05a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/CementBlock1/cement_block_1.prefab using Guid(34ba554529e664e4cb49476c4390b05a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fabcde71c2eedfb3e7dfb86c3b8a50a1') in 0.0124739 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.401621 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/CementBlock2/cement_block_2.prefab
+  artifactKey: Guid(5cf16da669b522146a83bd0ced0cb99d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/CementBlock2/cement_block_2.prefab using Guid(5cf16da669b522146a83bd0ced0cb99d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3178d6eb624c5da15fc399d645ddbd78') in 0.0190327 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.743450 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Debris1/debris_1.fbx
+  artifactKey: Guid(79dfc017bea71d845b7d3b229da4ab8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Debris1/debris_1.fbx using Guid(79dfc017bea71d845b7d3b229da4ab8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c2cc5216818560dbe4d3cd8b1088a4a3') in 0.0111544 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.820959 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Debris2/debris_2.fbx
+  artifactKey: Guid(c12b6184cdeadff45adcc210817672b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Debris2/debris_2.fbx using Guid(c12b6184cdeadff45adcc210817672b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd3778bd3c4960b10001b9d9ffeab098f') in 0.0115431 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.026474 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Debris3/debris_3.fbx
+  artifactKey: Guid(00dbc9cdc70a94c4da3348a4e4b799b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Debris3/debris_3.fbx using Guid(00dbc9cdc70a94c4da3348a4e4b799b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dcc043b78bdc07b626b80b85abdddc5b') in 0.0118513 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.088080 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Debris4/debris_4.fbx
+  artifactKey: Guid(a487091682dcdab49865b610244f0349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Debris4/debris_4.fbx using Guid(a487091682dcdab49865b610244f0349) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b4261a14f847c841024db7f8e4e68bd4') in 0.014397 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.558167 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Bushes1/bushes_1.prefab
+  artifactKey: Guid(1f51a6fa67c2542499b7d014ff95a8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Bushes1/bushes_1.prefab using Guid(1f51a6fa67c2542499b7d014ff95a8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '306716209ff7a232c8ab1c7704232833') in 0.0097671 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.071811 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Bush1/bush_1.prefab
+  artifactKey: Guid(89302f3dca41cb54f93e3b77b8ab75f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Bush1/bush_1.prefab using Guid(89302f3dca41cb54f93e3b77b8ab75f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'feaf9e56a57fac276443f531cbc37253') in 0.0089191 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.056297 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Moss4/moss_4.fbx
+  artifactKey: Guid(6aed8f98bdd356a4ca031ed46456dba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Moss4/moss_4.fbx using Guid(6aed8f98bdd356a4ca031ed46456dba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eef6d174deadf2f03c893bf3db6c84dd') in 0.011979 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.697327 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Pillar1/pillar_1.fbx
+  artifactKey: Guid(f89a92d8147bf7c4499d0b8ce863b522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Pillar1/pillar_1.fbx using Guid(f89a92d8147bf7c4499d0b8ce863b522) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1107bfe97f15056c534959383232c8d0') in 0.011761 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.267738 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Rubble1/rubble_1.fbx
+  artifactKey: Guid(48528106254037d4e802d32982204bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Rubble1/rubble_1.fbx using Guid(48528106254037d4e802d32982204bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6b6fa1036d3577d5dbaff38580b95626') in 0.0112869 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.493802 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Rubble2/rubble_2.fbx
+  artifactKey: Guid(d62b88fda00bde448b715bfdb5bdf302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Rubble2/rubble_2.fbx using Guid(d62b88fda00bde448b715bfdb5bdf302) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e1d4b556954d0c75e11172e7f11fd76') in 0.0185244 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.993932 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Rubble3/rubble_3.fbx
+  artifactKey: Guid(1b917a2608e0db54f93cd705a4d5999d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Rubble3/rubble_3.fbx using Guid(1b917a2608e0db54f93cd705a4d5999d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ba67189c96e7cdd5c0035fb486c7fdcd') in 0.0113395 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.600752 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Rubble4/rubble_4.fbx
+  artifactKey: Guid(829ab6f161bd5534a987e064d5c5a821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Rubble4/rubble_4.fbx using Guid(829ab6f161bd5534a987e064d5c5a821) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '73a34321c7412e50effaa4763da5e5ae') in 0.0120062 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.829082 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinBuilding1/ruin_building_1.fbx
+  artifactKey: Guid(e3b1a2a4fe070544ea9f0f79fadbf72b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinBuilding1/ruin_building_1.fbx using Guid(e3b1a2a4fe070544ea9f0f79fadbf72b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bde3858b5e9dd805e861b47b034da086') in 0.0236136 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 99.620580 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinBuilding2/ruin_building_2.fbx
+  artifactKey: Guid(6a407019d52f24b4ea8d0f52e286989e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinBuilding2/ruin_building_2.fbx using Guid(6a407019d52f24b4ea8d0f52e286989e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e3cd1b2c33656d5ba1d89da6bab9845f') in 0.0130912 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.550852 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinBuilding8/ruin_building_8.prefab
+  artifactKey: Guid(58b9f51f861076b47975721002bb6c04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinBuilding8/ruin_building_8.prefab using Guid(58b9f51f861076b47975721002bb6c04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6361be549eae85f3962201ac61ff3f9e') in 0.0215468 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.626043 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinBuilding9/ruin_building_9.prefab
+  artifactKey: Guid(c8506fd462175c04fa772d09f9c1abd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinBuilding9/ruin_building_9.prefab using Guid(c8506fd462175c04fa772d09f9c1abd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bf85989ff7fcf700350dd959165d12df') in 0.0091638 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.358947 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinBuilding10/ruin_building_10.prefab
+  artifactKey: Guid(8a28601f22ef6b644bef9fafb1d66817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinBuilding10/ruin_building_10.prefab using Guid(8a28601f22ef6b644bef9fafb1d66817) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cba289d52b9a5468d47ef62ec9dc7d68') in 0.0232309 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.894520 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinWalls1/ruin_walls_1.prefab
+  artifactKey: Guid(a501fd41cfd5050449643a80a2888ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinWalls1/ruin_walls_1.prefab using Guid(a501fd41cfd5050449643a80a2888ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '52aa08c01ce8429df5798839496ce517') in 0.0089636 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.433477 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinWalls2/ruin_walls_2.prefab
+  artifactKey: Guid(437f001a5cfa32b41a1457632ecc8176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinWalls2/ruin_walls_2.prefab using Guid(437f001a5cfa32b41a1457632ecc8176) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6205fb3a844b9f3e84045ce32fdd6791') in 0.0085875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.361779 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinWalls3/ruin_walls_3.fbx
+  artifactKey: Guid(7554631241527094e84f4338aa2abbd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinWalls3/ruin_walls_3.fbx using Guid(7554631241527094e84f4338aa2abbd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '65442727ab4bb9356737ec6f54a974c2') in 0.0106912 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.391630 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinWalls4/ruin_walls_4.fbx
+  artifactKey: Guid(ba0f5fe2fec00ba46a2a48c04630b266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinWalls4/ruin_walls_4.fbx using Guid(ba0f5fe2fec00ba46a2a48c04630b266) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ff834a5fbf75ef1272c1d72d25772bcd') in 0.0110917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.173621 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinWalls5/ruin_walls_5.prefab
+  artifactKey: Guid(d3b0771f93d4be4489273ef71e8d0fa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinWalls5/ruin_walls_5.prefab using Guid(d3b0771f93d4be4489273ef71e8d0fa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2f8c0d0b3bdaf6d3a50716ff3c857cc7') in 0.0084763 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.193371 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinWalls6/ruin_walls_6.prefab
+  artifactKey: Guid(e31d23bfa8d7ede43b77740978d6c594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinWalls6/ruin_walls_6.prefab using Guid(e31d23bfa8d7ede43b77740978d6c594) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2629fa0f058dc8fcbd9a2b526e77c427') in 0.0082922 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.259411 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinWalls7/ruin_walls_7.prefab
+  artifactKey: Guid(4a30e301bf6fe4b4ea4a54e7814e3549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/RuinWalls7/ruin_walls_7.prefab using Guid(4a30e301bf6fe4b4ea4a54e7814e3549) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '491a336865abcf53952f6b4e9222fc2e') in 0.0079529 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.909754 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Tree1/tree_1.prefab
+  artifactKey: Guid(2b3f8d4c4c39c4d4da754039b9de57b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Tree1/tree_1.prefab using Guid(2b3f8d4c4c39c4d4da754039b9de57b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ad4859f8f337922ee0aa6cfe536a4f01') in 0.0200409 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.525347 seconds.
+  path: Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Tree2/tree_2.prefab
+  artifactKey: Guid(2c79025cda1fdab459b09191d5b86723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Aligned Games/Polygonal Post Apocalyptic Urban Ruins Asset Package/Models/Tree2/tree_2.prefab using Guid(2c79025cda1fdab459b09191d5b86723) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4260032defec0a8f4d5b6b34062338c8') in 0.0193863 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3189 unused Assets / (1.8 MB). Loaded Objects now: 3931.
+Memory consumption went from 125.0 MB to 123.2 MB.
+Total: 13.622600 ms (FindLiveObjects: 0.577900 ms CreateObjectMapping: 0.411700 ms MarkObjects: 10.878900 ms  DeleteObjects: 1.752200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\amsar\Sobrevivencia\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\amsar\Sobrevivencia\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.690 seconds
+Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.617 seconds
+Domain Reload Profiling: 1304ms
+	BeginReloadAssembly (209ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (66ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (400ms)
+		LoadAssemblies (375ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (122ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (107ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (618ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (414ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (40ms)
+			ProcessInitializeOnLoadAttributes (338ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3194 unused Assets / (1.4 MB). Loaded Objects now: 3930.
+Memory consumption went from 127.7 MB to 126.3 MB.
+Total: 5.954700 ms (FindLiveObjects: 0.341600 ms CreateObjectMapping: 0.200100 ms MarkObjects: 4.278100 ms  DeleteObjects: 1.134100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 160.625276 seconds.
+  path: Assets/Pacotes/Decrepit Dungeon LITE/Materials/Flame.mat
+  artifactKey: Guid(e3aca7f17b83630409550de9dc736e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Decrepit Dungeon LITE/Materials/Flame.mat using Guid(e3aca7f17b83630409550de9dc736e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c3bbc439d63c07189af060f3b8b6f2f4') in 0.1280755 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.709045 seconds.
+  path: Assets/Pacotes/Mars Landscape 3D/Resources
+  artifactKey: Guid(b813c557db7384a4d986e4d1c300aa5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Mars Landscape 3D/Resources using Guid(b813c557db7384a4d986e4d1c300aa5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b4c11995dd560c6ccca6a73782ec6fab') in 0.0010177 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.087581 seconds.
-  path: Assets/Pacotes/ArvisMag_Assets/SpaceShuttle/Obj/Materials/No Name.mat
-  artifactKey: Guid(eb9eab3a889f18e4892dc9db9a628bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pacotes/ArvisMag_Assets/SpaceShuttle/Obj/Materials/No Name.mat using Guid(eb9eab3a889f18e4892dc9db9a628bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0b25a82a87833a57b6d305accbcd8ad3') in 0.028353 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 1.726338 seconds.
+  path: Assets/Pacotes/Mars Landscape 3D/Resources/Geometry/Terrain.asset
+  artifactKey: Guid(bcc00276e3c6f482bb6d47fd04ead463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Mars Landscape 3D/Resources/Geometry/Terrain.asset using Guid(bcc00276e3c6f482bb6d47fd04ead463) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)The tree ML3D_Rocks_02_04 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+The tree ML3D_Rocks_02_03 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+The tree ML3D_Rocks_02_02 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+The tree ML3D_Rocks_02_01 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+The tree ML3D_Rocks_02_00 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+The tree ML3D_Rocks_00_02 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+The tree ML3D_Rocks_00_01 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+The tree ML3D_Rocks_01_02 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+The tree ML3D_Rocks_01_03 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+The tree ML3D_Rocks_01_01 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+ -> (artifact id: 'cb5f56a605c21c8000a134cf3637f3d7') in 0.0981979 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 87
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.760673 seconds.
+  path: Assets/Pacotes/MobilityArts/SciFiHandGun/SciFiHandGun.prefab
+  artifactKey: Guid(392a05bd229c33043ae112a856120172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/MobilityArts/SciFiHandGun/SciFiHandGun.prefab using Guid(392a05bd229c33043ae112a856120172) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '74d809316e39b2684cc029beed1be612') in 0.0356601 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 37
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.268907 seconds.
+  path: Assets/Pacotes/MobilityArts/SciFiHandGun/Materials
+  artifactKey: Guid(55cc063aa8802e04997d6261465d1e8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/MobilityArts/SciFiHandGun/Materials using Guid(55cc063aa8802e04997d6261465d1e8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '55a3a43cb82d1dd1475d78c99637dffb') in 0.0007744 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.165513 seconds.
+  path: Assets/Pacotes/MobilityArts/SciFiHandGun/Materials/SciFiHandGun.mat
+  artifactKey: Guid(a82133cb4d1ad614ca6c4be61701649c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/MobilityArts/SciFiHandGun/Materials/SciFiHandGun.mat using Guid(a82133cb4d1ad614ca6c4be61701649c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ced1d3bd1835cd86e3581e7d36f85826') in 0.0248285 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.560175 seconds.
+  path: Assets/Pacotes/MobilityArts/SciFiHandGun/SciFiHandGun/HandGun_disfuse.png
+  artifactKey: Guid(6ad5fa3e3fd8f8c409a90486d8a41e30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/MobilityArts/SciFiHandGun/SciFiHandGun/HandGun_disfuse.png using Guid(6ad5fa3e3fd8f8c409a90486d8a41e30) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '811af6b78f14b10361ae7c0b4fc47662') in 0.0204615 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Pacotes/MobilityArts/SciFiHandGun/SciFiHandGun/HandGun_occlusion.png
+  artifactKey: Guid(c3e2cb16fb0e337429946d4981a74d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/MobilityArts/SciFiHandGun/SciFiHandGun/HandGun_occlusion.png using Guid(c3e2cb16fb0e337429946d4981a74d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4bfbba3de40e0c31d82d562accf0cf6b') in 0.0110496 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Pacotes/MobilityArts/SciFiHandGun/SciFiHandGun/HandGun_normals.png
+  artifactKey: Guid(9baa7aad729addb488e5891613290f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/MobilityArts/SciFiHandGun/SciFiHandGun/HandGun_normals.png using Guid(9baa7aad729addb488e5891613290f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '49fd89d8f69848eb71207fc93450ce27') in 0.0151598 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pacotes/MobilityArts/SciFiHandGun/SciFiHandGun/HandGun_specular.png
+  artifactKey: Guid(e164a6acf35e33040a6f1e4f744fdf5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/MobilityArts/SciFiHandGun/SciFiHandGun/HandGun_specular.png using Guid(e164a6acf35e33040a6f1e4f744fdf5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '799f9f481cebb115038133d50e30f7f4') in 0.009395 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.326518 seconds.
+  path: Assets/Pacotes/MobilityArts/SciFiHandGun/SciFiHandGun.fbm/HandGun_disfuse.png
+  artifactKey: Guid(c547ad224434253458f3b1f5805c2ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/MobilityArts/SciFiHandGun/SciFiHandGun.fbm/HandGun_disfuse.png using Guid(c547ad224434253458f3b1f5805c2ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '77a348c7d8e54abffcf59d6e335b2bd8') in 0.009063 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pacotes/MobilityArts/SciFiHandGun/SciFiHandGun.fbm/HandGun_occlusion.png
+  artifactKey: Guid(d40a793668d5bc942b6cdd9c1f6603d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/MobilityArts/SciFiHandGun/SciFiHandGun.fbm/HandGun_occlusion.png using Guid(d40a793668d5bc942b6cdd9c1f6603d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4d0bcdc1dd685fa358a57256c1ac99aa') in 0.0097127 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.756253 seconds.
+  path: Assets/Pacotes/NatureStarterKit2/Materials/bark02.mat
+  artifactKey: Guid(aa9fcb8764ab3324aa575a948d139c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/NatureStarterKit2/Materials/bark02.mat using Guid(aa9fcb8764ab3324aa575a948d139c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0b724b4c7d5b2934c64105079a6f3232') in 0.0867542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pacotes/NatureStarterKit2/Materials/skybox.mat
+  artifactKey: Guid(39cace2863926444a9a78daa8ae26413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/NatureStarterKit2/Materials/skybox.mat using Guid(39cace2863926444a9a78daa8ae26413) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '92e82c56dd8a112f07d1c8066eacb6f1') in 0.020303 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pacotes/NatureStarterKit2/Materials/bush02.mat
+  artifactKey: Guid(42375d2e1d7b61744887ddc5186b7605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/NatureStarterKit2/Materials/bush02.mat using Guid(42375d2e1d7b61744887ddc5186b7605) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e8d88802091a6821c4b1c6bff4acef6c') in 0.0173494 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.700903 seconds.
+  path: Assets/Pacotes/NatureStarterKit2/Nature/bush02.prefab
+  artifactKey: Guid(ec78ebca7517fb745a45a931cb06d2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/NatureStarterKit2/Nature/bush02.prefab using Guid(ec78ebca7517fb745a45a931cb06d2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15b77c20ef6b225472b9832f5cf36a6e') in 0.0573207 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pacotes/NatureStarterKit2/Nature/tree02.prefab
+  artifactKey: Guid(c63ea781a273235439e583799176c846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/NatureStarterKit2/Nature/tree02.prefab using Guid(c63ea781a273235439e583799176c846) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6bdb29d4ce3bad6f7f7a33b4e68985ff') in 0.0276211 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pacotes/NatureStarterKit2/Nature/bush06.prefab
+  artifactKey: Guid(f62058cb710fd1745a24102fff0edd46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/NatureStarterKit2/Nature/bush06.prefab using Guid(f62058cb710fd1745a24102fff0edd46) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '152af5191e6f082092fe0e8bbbbae928') in 0.0269707 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Pacotes/NatureStarterKit2/Nature/tree01.prefab
+  artifactKey: Guid(393b236c42954a640b513d46de90ac38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/NatureStarterKit2/Nature/tree01.prefab using Guid(393b236c42954a640b513d46de90ac38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '69ca9b29e32d5dd5ce30498f8fadf322') in 0.0272008 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.701748 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Textures/base-color-normal.png
+  artifactKey: Guid(ff91cef54bb04124b899f12176bee5d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Textures/base-color-normal.png using Guid(ff91cef54bb04124b899f12176bee5d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bceeac5f7ac8543ce13af7e557e3750b') in 0.0129808 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000477 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Textures/bush.png
+  artifactKey: Guid(e183aa09c01ee5b49b32b70535924240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Textures/bush.png using Guid(e183aa09c01ee5b49b32b70535924240) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cbd943f9fde9e5fc0177d3c801dc48f4') in 0.0084843 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001317 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Textures/computer_wall_texture.png
+  artifactKey: Guid(7b98260aedcf3b0438023520105fd422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Textures/computer_wall_texture.png using Guid(7b98260aedcf3b0438023520105fd422) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '006f2c075bbf3bee7ee8edd05b8de07b') in 0.0206353 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Textures/lattice.png
+  artifactKey: Guid(26d4d63e94c354a478b2fe05bb112302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Textures/lattice.png using Guid(26d4d63e94c354a478b2fe05bb112302) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5a1701cbd0ca1c26a7b4174844cb2d1d') in 0.0070484 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Textures/mettalic.png
+  artifactKey: Guid(5ef1ecb17b682174ebbeed9a9d7af166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Textures/mettalic.png using Guid(5ef1ecb17b682174ebbeed9a9d7af166) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '460ecaf7b5b00d3b8cbc0ac6282c742a') in 0.0103759 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Textures/second-color.png
+  artifactKey: Guid(35c79cc0b2e9d394faa8922409ffb64a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Textures/second-color.png using Guid(35c79cc0b2e9d394faa8922409ffb64a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '60dc92ce0954daee7526bf69f588ac17') in 0.0126396 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Pacotes/Sci-Fi Styled Modular Pack/Textures/lattice-emision-mask.png
+  artifactKey: Guid(a2439a5526984d64c804eae4d1d65b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/Sci-Fi Styled Modular Pack/Textures/lattice-emision-mask.png using Guid(a2439a5526984d64c804eae4d1d65b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f49c616dc02a4eee7dd5dc38142f899') in 0.0068582 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.540990 seconds.
+  path: Assets/Pacotes/SciFi_Space_Soldier/Prefabs/Space_Soldier_A_LOD1.prefab
+  artifactKey: Guid(ee13d518658eb2140a5cf1e59a3de544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/SciFi_Space_Soldier/Prefabs/Space_Soldier_A_LOD1.prefab using Guid(ee13d518658eb2140a5cf1e59a3de544) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'da47add0c17bdda1c4634f9596d5e6d7') in 0.1315897 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 81
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.326101 seconds.
+  path: Assets/Pacotes/SciFi_Space_Soldier/Resources/Weapons/Rifle/Materials/M_Weapon_Rifle_B.mat
+  artifactKey: Guid(811bfde249015f34b96e27887110e9f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/SciFi_Space_Soldier/Resources/Weapons/Rifle/Materials/M_Weapon_Rifle_B.mat using Guid(811bfde249015f34b96e27887110e9f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fcf922224d68a16142ff28ca594f2ee0') in 0.0197211 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
