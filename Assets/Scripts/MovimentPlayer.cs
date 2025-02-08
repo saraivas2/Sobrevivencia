@@ -146,7 +146,7 @@ public class MovimentPlayer : MonoBehaviour
         animator.SetBool(runplyer1, true);
     }
 
-    Vector3 GetDirectionVector(float angleY)
+    private Vector3 GetDirectionVector(float angleY)
     {
         float radianY = angleY * Mathf.Deg2Rad;
 

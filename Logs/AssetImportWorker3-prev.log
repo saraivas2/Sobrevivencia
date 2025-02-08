@@ -15,7 +15,7 @@ C:/Users/amsar/Sobrevivencia
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-54278
+63896
 -job-worker-count
 7
 -background-job-worker-count
@@ -58,12 +58,12 @@ C:/Users/amsar/Sobrevivencia
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [16708] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 925014982 [EditorId] 925014982 [Version] 1048832 [Id] WindowsEditor(7,Marcos) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [16708] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 925014982 [EditorId] 925014982 [Version] 1048832 [Id] WindowsEditor(7,Marcos) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [24928] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2616693676 [EditorId] 2616693676 [Version] 1048832 [Id] WindowsEditor(7,Marcos) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [24928] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2616693676 [EditorId] 2616693676 [Version] 1048832 [Id] WindowsEditor(7,Marcos) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 1.75 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.85 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.20f1 (0e25a174756c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Resources/UnitySubsystems
@@ -79,45 +79,45 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56724
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56132
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006555 seconds.
-- Loaded All Assemblies, in  0.384 seconds
+Registered in 0.006202 seconds.
+- Loaded All Assemblies, in  0.445 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.313 seconds
-Domain Reload Profiling: 694ms
-	BeginReloadAssembly (116ms)
+- Finished resetting the current domain, in  0.369 seconds
+Domain Reload Profiling: 811ms
+	BeginReloadAssembly (118ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (57ms)
-	LoadAllAssembliesAndSetupDomain (160ms)
-		LoadAssemblies (111ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (58ms)
+	LoadAllAssembliesAndSetupDomain (205ms)
+		LoadAssemblies (113ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (157ms)
-			TypeCache.Refresh (156ms)
-				TypeCache.ScanAssembly (143ms)
+		AnalyzeDomain (202ms)
+			TypeCache.Refresh (200ms)
+				TypeCache.ScanAssembly (184ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (314ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (370ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (262ms)
+		SetupLoadedEditorAssemblies (304ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (7ms)
 			BeforeProcessingInitializeOnLoad (6ms)
-			ProcessInitializeOnLoadAttributes (190ms)
-			ProcessInitializeOnLoadMethodAttributes (52ms)
+			ProcessInitializeOnLoadAttributes (218ms)
+			ProcessInitializeOnLoadMethodAttributes (60ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -128,242 +128,146 @@ Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\amsar\Sobrevivencia\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\amsar\Sobrevivencia\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.850 seconds
-Refreshing native plugins compatible for Editor in 1.23 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.110 seconds
+Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.664 seconds
-Domain Reload Profiling: 1509ms
-	BeginReloadAssembly (382ms)
+- Finished resetting the current domain, in  0.621 seconds
+Domain Reload Profiling: 1726ms
+	BeginReloadAssembly (452ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (41ms)
-	RebuildNativeTypeToScriptingClass (12ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (18ms)
 	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (369ms)
-		LoadAssemblies (283ms)
+	LoadAllAssembliesAndSetupDomain (558ms)
+		LoadAssemblies (395ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (157ms)
-			TypeCache.Refresh (134ms)
-				TypeCache.ScanAssembly (121ms)
-			BuildScriptInfoCaches (17ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (665ms)
+		AnalyzeDomain (243ms)
+			TypeCache.Refresh (211ms)
+				TypeCache.ScanAssembly (197ms)
+			BuildScriptInfoCaches (24ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (621ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (473ms)
+		SetupLoadedEditorAssemblies (432ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
+			InitializePlatformSupportModulesInManaged (4ms)
 			SetLoadedEditorAssemblies (4ms)
 			BeforeProcessingInitializeOnLoad (38ms)
-			ProcessInitializeOnLoadAttributes (399ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
-			AfterProcessingInitializeOnLoad (7ms)
+			ProcessInitializeOnLoadAttributes (360ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.31 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 85 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3195 unused Assets / (1.7 MB). Loaded Objects now: 3882.
-Memory consumption went from 142.5 MB to 140.8 MB.
-Total: 7.578700 ms (FindLiveObjects: 0.436500 ms CreateObjectMapping: 0.421100 ms MarkObjects: 4.923600 ms  DeleteObjects: 1.796300 ms)
+Unloading 3195 unused Assets / (1.8 MB). Loaded Objects now: 3882.
+Memory consumption went from 142.5 MB to 140.7 MB.
+Total: 12.482600 ms (FindLiveObjects: 0.610500 ms CreateObjectMapping: 0.379400 ms MarkObjects: 8.733300 ms  DeleteObjects: 2.757800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16398.167953 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/factory_building_small.fbx
-  artifactKey: Guid(3a9b28f17b9756a47859500720485dfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/factory_building_small.fbx using Guid(3a9b28f17b9756a47859500720485dfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a77ce41e270277283f7c5ea1d1e689d5') in 0.2020808 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/factory_building_small_bgr.fbx
-  artifactKey: Guid(c08d4447b47b6f44aad8742db6978c9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/factory_building_small_bgr.fbx using Guid(c08d4447b47b6f44aad8742db6978c9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f06edbd8aab843f514399b0f038d4bb2') in 0.0340577 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/office_building_4.fbx
-  artifactKey: Guid(8cec6e2279be0304c81454e0c6dc6b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/office_building_4.fbx using Guid(8cec6e2279be0304c81454e0c6dc6b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '98cc1ee3df56fa0df26b7928869ed8f5') in 0.0395133 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.965949 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_extra.mat
-  artifactKey: Guid(48bf040ff1590a74782bf0210962cdee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_extra.mat using Guid(48bf040ff1590a74782bf0210962cdee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1ea8a1e2ebb97496a22715b9db67c5d6') in 0.0393022 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/props_main.mat
-  artifactKey: Guid(bcf074209a5884843b7c5ae3c635ea8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/props_main.mat using Guid(bcf074209a5884843b7c5ae3c635ea8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eaf7660560a624909de86dd3230fcc92') in 0.0111079 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/orange_light.mat
-  artifactKey: Guid(faba0caff81e6d041a9f29d7045d39bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/orange_light.mat using Guid(faba0caff81e6d041a9f29d7045d39bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9baca8ec449a47d9558e8abc83927f93') in 0.0088976 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_highway.mat
-  artifactKey: Guid(efba80df10aeb624e82f4d1d32902613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_highway.mat using Guid(efba80df10aeb624e82f4d1d32902613) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dde2e1cd22c4deae1213005d6107254e') in 0.0165612 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/building_interior.mat
-  artifactKey: Guid(c7040db656dd78e4db434fd7330def51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/building_interior.mat using Guid(c7040db656dd78e4db434fd7330def51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a61a4278ff672661ac9552b303b8cf68') in 0.0109774 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.956107 seconds.
-  path: Assets/NatureManufacture Assets/Winter Background Mountains/Stamps Unity Terrain 2018.3/NM_Hill_4.png
-  artifactKey: Guid(f855d4cd01f04a04ab48a332f068414a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NatureManufacture Assets/Winter Background Mountains/Stamps Unity Terrain 2018.3/NM_Hill_4.png using Guid(f855d4cd01f04a04ab48a332f068414a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bf23d8c0f74cb07846fbc6100d577a2e') in 0.0211554 seconds
+  Time since last request: 88419.881172 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Textures/HD_Wall_02_Dif_Style_02_Illum.png
+  artifactKey: Guid(332051484dd01470f9ba2a1597303614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Textures/HD_Wall_02_Dif_Style_02_Illum.png using Guid(332051484dd01470f9ba2a1597303614) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '55a93b84307bbf1c20728d6a3160beea') in 0.0965768 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/NatureManufacture Assets/Winter Background Mountains/Stamps Unity Terrain 2018.3/NM_Hill_8.png
-  artifactKey: Guid(b207e46263ae9aa4a8372f762ed5eab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NatureManufacture Assets/Winter Background Mountains/Stamps Unity Terrain 2018.3/NM_Hill_8.png using Guid(b207e46263ae9aa4a8372f762ed5eab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c171960311f64928206be307645c023b') in 0.0107669 seconds
+  Time since last request: 0.012270 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Textures/HD_Wall_06_Dif_Style_02_Illum.png
+  artifactKey: Guid(88502bc90706a431998c72c7edeb8fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Textures/HD_Wall_06_Dif_Style_02_Illum.png using Guid(88502bc90706a431998c72c7edeb8fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'afae10e16a65cff78a01694a44075bc7') in 0.0146061 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/NatureManufacture Assets/Winter Background Mountains/Stamps Unity Terrain 2018.3/NM_Mountain_7.png
-  artifactKey: Guid(1c85cc68d9140954f8a05b47e233d237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NatureManufacture Assets/Winter Background Mountains/Stamps Unity Terrain 2018.3/NM_Mountain_7.png using Guid(1c85cc68d9140954f8a05b47e233d237) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ab1dfa6fc59b14dbaafdcd2220bcd044') in 0.0111561 seconds
+  Time since last request: 0.001456 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Textures/HD_Wall_07_Dif_Style_02_Alb.png
+  artifactKey: Guid(638fea7e57d284375bf9647c0335fd6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Textures/HD_Wall_07_Dif_Style_02_Alb.png using Guid(638fea7e57d284375bf9647c0335fd6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '92023f535e626842a9245e6f3c6959b5') in 0.0163436 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/NatureManufacture Assets/Winter Background Mountains/Stamps Unity Terrain 2018.3/NM_Hill_7.png
-  artifactKey: Guid(111d9ced4889ea14db695f665b699224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NatureManufacture Assets/Winter Background Mountains/Stamps Unity Terrain 2018.3/NM_Hill_7.png using Guid(111d9ced4889ea14db695f665b699224) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3eb878ca962c263cbc6f5ca8181d6556') in 0.0102639 seconds
+  Time since last request: 0.203019 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Textures/HD_Wall_08_Dif_Style_02_AO.png
+  artifactKey: Guid(6864e8e77706b4db98310a484808f40b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Textures/HD_Wall_08_Dif_Style_02_AO.png using Guid(6864e8e77706b4db98310a484808f40b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '565ac35c6c554722e6c1920624aa039c') in 0.0230905 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000071 seconds.
-  path: Assets/NatureManufacture Assets/Winter Background Mountains/Stamps Unity Terrain 2018.3/NM_Hill_9.png
-  artifactKey: Guid(8e57711405055f44386825ebb41b82b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NatureManufacture Assets/Winter Background Mountains/Stamps Unity Terrain 2018.3/NM_Hill_9.png using Guid(8e57711405055f44386825ebb41b82b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c75f465578aa3b1712d75e3179947de6') in 0.0113115 seconds
+  Time since last request: 0.015173 seconds.
+  path: Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Textures/HD_Wall_09_Dif_Style_02_Norm.png
+  artifactKey: Guid(83d5d46c5341e4938bf3cff9f39bd100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/_Creepy_Cat/_3D Scifi Kit Starter Kit_HD/_Textures/HD_Wall_09_Dif_Style_02_Norm.png using Guid(83d5d46c5341e4938bf3cff9f39bd100) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a83f0991af7a6a4f4db539cf1c4ff4d4') in 0.0845651 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.389738 seconds.
-  path: Assets/NatureManufacture Assets/Winter Background Mountains/Prefabs/Prefab_Mountain_23.prefab
-  artifactKey: Guid(90f6cb45efc979145bfe6b410430f5a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NatureManufacture Assets/Winter Background Mountains/Prefabs/Prefab_Mountain_23.prefab using Guid(90f6cb45efc979145bfe6b410430f5a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9a53dd45f36e2727888d7854f516daa6') in 0.044123 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.882046 seconds.
-  path: Assets/NatureManufacture Assets/Winter Background Mountains/Models/Materials/M_Mountain_23.mat
-  artifactKey: Guid(64a7f6ebbaf28af46971aded12feadc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NatureManufacture Assets/Winter Background Mountains/Models/Materials/M_Mountain_23.mat using Guid(64a7f6ebbaf28af46971aded12feadc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c3777da5a700987560b56f3d9ea381c3') in 0.0391963 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.290193 seconds.
-  path: Assets/NatureManufacture Assets/Winter Background Mountains/Models/Textures/T_Mountain_20_A_T.tga
-  artifactKey: Guid(624c19f6f85b793469ca33bb9220d54d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NatureManufacture Assets/Winter Background Mountains/Models/Textures/T_Mountain_20_A_T.tga using Guid(624c19f6f85b793469ca33bb9220d54d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3d8a60800cf90bca9763597cd0fd8e95') in 0.0124724 seconds
+  Time since last request: 0.146455 seconds.
+  path: Assets/Pacotes/NatureStarterKit2/Nature/bush04_Textures/normal_specular.png
+  artifactKey: Guid(198f2f9f3ce914b4196c142c0614649f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/NatureStarterKit2/Nature/bush04_Textures/normal_specular.png using Guid(198f2f9f3ce914b4196c142c0614649f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e9137469eee9068f2d4361d564730734') in 0.0124682 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/NatureManufacture Assets/Winter Background Mountains/Models/Textures/T_Mountain_22_N.png
-  artifactKey: Guid(ec5dff743cd26a744b8581ec5821a984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NatureManufacture Assets/Winter Background Mountains/Models/Textures/T_Mountain_22_N.png using Guid(ec5dff743cd26a744b8581ec5821a984) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5774b859d118d9733599752ac373af77') in 0.0155191 seconds
+  Time since last request: 0.011555 seconds.
+  path: Assets/Pacotes/NatureStarterKit2/Nature/bush03_Textures/normal_specular.png
+  artifactKey: Guid(3d94ae574d920c5449fe4e032d8c414d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/NatureStarterKit2/Nature/bush03_Textures/normal_specular.png using Guid(3d94ae574d920c5449fe4e032d8c414d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fefe5a7561a0643e1e40b24e862986c2') in 0.0097042 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/NatureManufacture Assets/Winter Background Mountains/Models/Textures/T_Mountain_22_A_T.tga
-  artifactKey: Guid(c095b5f2a300bb34ab22e8414dd9e65a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NatureManufacture Assets/Winter Background Mountains/Models/Textures/T_Mountain_22_A_T.tga using Guid(c095b5f2a300bb34ab22e8414dd9e65a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '52a2216aafb8304078c0ec98d52d6dfb') in 0.0136907 seconds
+  Time since last request: 0.013790 seconds.
+  path: Assets/Pacotes/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Textures/RandomVectors.png
+  artifactKey: Guid(a181ca8e3c62f3e4b8f183f6c586b032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Textures/RandomVectors.png using Guid(a181ca8e3c62f3e4b8f183f6c586b032) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7dde399649d8471460d82ef43b19d169') in 0.0081158 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/NatureManufacture Assets/Winter Background Mountains/Models/Textures/T_Mountain_20_AO.png
-  artifactKey: Guid(7f924a5c41e36fc49a9b11fb4704c5fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NatureManufacture Assets/Winter Background Mountains/Models/Textures/T_Mountain_20_AO.png using Guid(7f924a5c41e36fc49a9b11fb4704c5fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8bbc0ec10a6b764bd7e59869ad1f28a4') in 0.0138084 seconds
+  Time since last request: 3.757688 seconds.
+  path: Assets/Pacotes/NatureStarterKit2/Nature/bush01_Textures/shadow.png
+  artifactKey: Guid(601b2261c9f9ef0438b1966de0080c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/NatureStarterKit2/Nature/bush01_Textures/shadow.png using Guid(601b2261c9f9ef0438b1966de0080c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3b82163ab7534fd9c138806e7435d7c3') in 0.0135601 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 27.518076 seconds.
-  path: Assets/NatureManufacture Assets/Winter Background Mountains/Gaia Stamps/NM_Gaia_Hill_3.jpg
-  artifactKey: Guid(0ff0c87c78d19a44bb0b77a395d35677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NatureManufacture Assets/Winter Background Mountains/Gaia Stamps/NM_Gaia_Hill_3.jpg using Guid(0ff0c87c78d19a44bb0b77a395d35677) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '34ac4ef8ca17a12a8edeffa66621fb5c') in 0.021181 seconds
+  Time since last request: 0.076668 seconds.
+  path: Assets/Armas/Pistol 2/Textures/4K/Pistol 2 Slide/Slide_Normal_OpenGL.png
+  artifactKey: Guid(400dee755d2cc784fa33f5bd58c9a8c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Armas/Pistol 2/Textures/4K/Pistol 2 Slide/Slide_Normal_OpenGL.png using Guid(400dee755d2cc784fa33f5bd58c9a8c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '20e9a3b6a6f079bb8189fff77bf3ab1c') in 0.3040864 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/NatureManufacture Assets/Winter Background Mountains/Gaia Stamps/NM_Gaia_Mountain_2.jpg
-  artifactKey: Guid(efa2eefa6c172294386ed9e0f0c4c6ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NatureManufacture Assets/Winter Background Mountains/Gaia Stamps/NM_Gaia_Mountain_2.jpg using Guid(efa2eefa6c172294386ed9e0f0c4c6ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b75d113f72539866124034b76c023b3b') in 0.0102587 seconds
+  Time since last request: 2.710826 seconds.
+  path: Assets/Pacotes/NatureStarterKit2/Nature/tree01_Textures/translucency_gloss.png
+  artifactKey: Guid(853d85e6df42bb346a907893af921d1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/NatureStarterKit2/Nature/tree01_Textures/translucency_gloss.png using Guid(853d85e6df42bb346a907893af921d1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bfce3d29443d30345f965fdd405822a0') in 0.0111453 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/NatureManufacture Assets/Winter Background Mountains/Gaia Stamps/NM_Gaia_Hill_9.jpg
-  artifactKey: Guid(208f94ed97b9c5140ad04b75eaa63fe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NatureManufacture Assets/Winter Background Mountains/Gaia Stamps/NM_Gaia_Hill_9.jpg using Guid(208f94ed97b9c5140ad04b75eaa63fe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a091153c9a7b658d48703577356ab1dd') in 0.0157309 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/NatureManufacture Assets/Winter Background Mountains/Gaia Stamps/NM_Gaia_Hill_7.jpg
-  artifactKey: Guid(de6be41a6be5f1549a62164db28cd43a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NatureManufacture Assets/Winter Background Mountains/Gaia Stamps/NM_Gaia_Hill_7.jpg using Guid(de6be41a6be5f1549a62164db28cd43a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '43ff87d2a45c12ac08cc261a09b136bb') in 0.0102512 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/NatureManufacture Assets/Winter Background Mountains/Gaia Stamps/NM_Gaia_Hill_6.jpg
-  artifactKey: Guid(b1ae5af76bcd3614faf2bb85701ad39e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NatureManufacture Assets/Winter Background Mountains/Gaia Stamps/NM_Gaia_Hill_6.jpg using Guid(b1ae5af76bcd3614faf2bb85701ad39e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd1523094d321e105ef7ec46011595aeb') in 0.0118002 seconds
+  Time since last request: 0.039034 seconds.
+  path: Assets/Pacotes/NatureStarterKit2/Nature/tree02_Textures/translucency_gloss.png
+  artifactKey: Guid(da1974f349a2d6a4696866fae760fef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pacotes/NatureStarterKit2/Nature/tree02_Textures/translucency_gloss.png using Guid(da1974f349a2d6a4696866fae760fef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7f3b598081a82b2b9ce61e121196196e') in 0.0086757 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
