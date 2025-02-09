@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 
 public class MovimentPlayer : MonoBehaviour
@@ -13,8 +14,13 @@ public class MovimentPlayer : MonoBehaviour
     private Rigidbody rb;
     private int walkPlayer = Animator.StringToHash("walking");
     private int jump = Animator.StringToHash("jump1");
-    private int idleHash = Animator.StringToHash("idle");
+    private int death = Animator.StringToHash("death");
     private int runplyer1 = Animator.StringToHash("running1");
+    private int pistol = Animator.StringToHash("Pistol");
+    private int rifle = Animator.StringToHash("rifleFire");
+    private int TwoJump = 0;
+    private bool booljump = false;
+
     float angleY;
     Vector3 CamVect;
     Quaternion quat;
@@ -31,17 +37,27 @@ public class MovimentPlayer : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
         }
     }
+
     private void Update()
     {
         
         mouseY += Input.GetAxis("Mouse X") * sensibilidade;
-        mouseX += Input.GetAxis("Mouse Y") * sensibilidade;
+        
+        transform.eulerAngles=new Vector3(0, mouseY, 0);
 
-        transform.eulerAngles = new Vector3(-mouseX, mouseY, 0);
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (TwoJump < 2)
+            {
+                booljump = true;
+            }
+            else 
+            {
+                booljump = false;
+                TwoJump = 0;
+            }
 
-        angleY = transform.eulerAngles.y;
-             
-        CamVect = GetDirectionVector(angleY);
+        }
 
         move();
        
@@ -49,77 +65,79 @@ public class MovimentPlayer : MonoBehaviour
 
     private void move()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.W) & Input.GetKey(KeyCode.R))
         {
-            JumpPlayer();
-            rb.AddForce(Vector3.up *  forcaPulo * Time.deltaTime, ForceMode.Impulse);
-        
+            RunningPlayer();
+            transform.Translate(Vector3.forward * Time.deltaTime * velocity * 2);
+
         } else if (Input.GetKey(KeyCode.W))
         {
             movePlayer();
             transform.Translate(Vector3.forward * Time.deltaTime * velocity);
 
-        } else if (Input.GetKey(KeyCode.S))
+        }
+        else if (Input.GetKey(KeyCode.S))
         {
             movePlayer();
             transform.Translate(Time.deltaTime * velocity * Vector3.back);
 
-        } else if (Input.GetKey(KeyCode.A))
-        {
-            transform.Translate(Time.deltaTime * velocity * Vector3.left);
-
-        } else  if (Input.GetKey(KeyCode.D))
-        {
-            movePlayer();
-            transform.Translate(Time.deltaTime * velocity * Vector3.right);
-        }
-        else if (Input.GetKey(KeyCode.R))
-        {
-            RunningPlayer();
-            transform.Translate(Vector3.forward * Time.deltaTime * velocity * 2);
-        }
-        else
+        }  else
         {
             IdlePlayer();
-            transform.Translate(Vector3.zero);
         }
     }
 
     private void movePlayer()
     {
         animator.SetBool(jump, false);
-        animator.SetBool(idleHash, false);
         animator.SetBool(walkPlayer, true);
         animator.SetBool(runplyer1, false);
+        animator.SetBool(pistol, false);
+        animator.SetBool(rifle, false);
+        animator.SetBool(death, false);
     }
 
     private void JumpPlayer()
     {
         animator.SetBool(jump, true);
-        animator.SetBool(idleHash, false);
+        animator.SetBool(walkPlayer, true);
+        animator.SetBool(runplyer1, false);
+        animator.SetBool(pistol, false);
+        animator.SetBool(rifle, false);
+        animator.SetBool(death, false);
+
+    }
+
+
+    private void AttackPlayerPistol()
+    {
+        animator.SetBool(jump, false);
         animator.SetBool(walkPlayer, false);
         animator.SetBool(runplyer1, false);
-
+        animator.SetBool(pistol, true);
+        animator.SetBool(rifle, false);
+        animator.SetBool(death, false);
     }
 
-
-    private void AttackPlayer()
+    private void AttackPlayerRifle()
     {
-        /*animator.SetBool(jump, false);
-        animator.SetBool(idleHash, true);
+        animator.SetBool(jump, false);
         animator.SetBool(walkPlayer, false);
-        animator.SetBool(runplyer1, false);*/
-
+        animator.SetBool(runplyer1, false);
+        animator.SetBool(pistol, false);
+        animator.SetBool(rifle, true);
+        animator.SetBool(death, false);
     }
-
 
     private void DeathPlayer()
     {
-        /*barraVida.SetActive(false);
+        /*barraVida.SetActive(false);*/
         animator.SetBool(jump, false);
-        animator.SetBool(idleHash, true);
         animator.SetBool(walkPlayer, false);
         animator.SetBool(runplyer1, false);
+        animator.SetBool(pistol, false);
+        animator.SetBool(rifle, false);
+        animator.SetBool(death, true);/*
        
         bool resp = gameover.ShowTelaGameOver(true);
         
@@ -134,25 +152,30 @@ public class MovimentPlayer : MonoBehaviour
     private void IdlePlayer()
     {
         animator.SetBool(jump, false);
-        animator.SetBool(idleHash, true);
         animator.SetBool(walkPlayer, false);
         animator.SetBool(runplyer1, false);
+        animator.SetBool(pistol, false);
+        animator.SetBool(rifle, false);
+        animator.SetBool(death, false);
     }
     private void RunningPlayer()
     {
-        animator.SetBool(jump, false);
-        animator.SetBool(idleHash, false);
-        animator.SetBool(walkPlayer, false);
         animator.SetBool(runplyer1, true);
+        animator.SetBool(walkPlayer, false);
+        animator.SetBool(jump, false);
+        animator.SetBool(pistol, false);
+        animator.SetBool(rifle, false);
+        animator.SetBool(death, false);
     }
 
-    private Vector3 GetDirectionVector(float angleY)
+    private void OnDrawGizmos()
     {
-        float radianY = angleY * Mathf.Deg2Rad;
+        if (this)
+        {
+            Gizmos.color = Color.red;
+            Vector3 Position = transform.position;
+            Gizmos.DrawWireSphere(Position, 15);
 
-        float x = Mathf.Sin(radianY);
-        float z = Mathf.Cos(radianY);
-
-        return new Vector3(x, 0, z);
+        }
     }
 }
