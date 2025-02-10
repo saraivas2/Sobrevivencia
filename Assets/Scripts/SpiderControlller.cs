@@ -17,8 +17,10 @@ public class SpiderControlller : MonoBehaviour
     public Transform[] pointWait;
     private int index;
     public bool spidermove = false;
+    public GameObject light;
+    bool attackBool = false;
 
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,13 +34,22 @@ public class SpiderControlller : MonoBehaviour
 
     void Update()
     {
-        if (spider.velocity.magnitude>0.02f)
+        if (spider.remainingDistance > spider.stoppingDistance + 0.2f)
         {
             spidermove = true;
         }
         else
         {
             spidermove = false;
+        }
+
+        if (attackBool)
+        {
+            AttackDante();
+        }
+        else
+        {
+            naoAttackDante();
         }
 
         AnimeMoveSpider();
@@ -56,8 +67,10 @@ public class SpiderControlller : MonoBehaviour
         if (Vector3.Distance(transform.position, player.transform.position) < distance)
         {
             movimentSpider();
+            light.SetActive(true);
         }
     }
+    
     IEnumerator CallVisit()
     {
         while (true)
@@ -77,40 +90,48 @@ public class SpiderControlller : MonoBehaviour
     {
         if (other.CompareTag("Dante"))
         {
-            int val = Random.Range(0, 2);
-            if (val == 0)
-            {
-                animator.SetBool("attack1",true);
-            }
-            else
-            {
-                animator.SetBool("attack2",true);
-            }
-        }
-        else
-        {
-            animator.SetBool("attack1", false);
-            animator.SetBool("attack2", false);
+            attackBool = true;
         }
 
         if (other.CompareTag("damage1"))
         {
-            VidaSpider(danoPistol);
+            animator.SetBool("damage", true);
 
         }
 
         if (other.CompareTag("damage2"))
         {
-            VidaSpider(danoRifle);
             animator.SetBool("damage", true);
-        }
-        else
-        {
-            animator.SetBool("damage", false);
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Dante"))
+        {
+            attackBool = false;
+            
+        }
+    }
 
+    private void AttackDante()
+    {
+        int val = Random.Range(0, 2);
+        if (val == 0)
+        {
+            animator.SetBool("attack1", true);
+        }
+        else
+        {
+            animator.SetBool("attack2", true);
+        }
+    }
+
+    private void naoAttackDante()
+    {
+        animator.SetBool("attack1", false);
+        animator.SetBool("attack2", false);
+    }
     private void movimentSpider()
     {
         spider.SetDestination(player.transform.position);
