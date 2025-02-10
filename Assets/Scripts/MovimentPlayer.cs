@@ -1,117 +1,198 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditorInternal;
 using UnityEngine;
+using UnityEngine.AI;
+using Unity.VisualScripting;
+
 
 public class MovimentPlayer : MonoBehaviour
 {
     public float velocity;
-    public float forcaPulo;
-    private bool travarMouse = true;
-    private float mouseX = 0.0f, mouseY = 0.0f;
-    float sensibilidade = 1.2f;
     private Animator animator;
     private Rigidbody rb;
     private int walkPlayer = Animator.StringToHash("walking");
-    private int jump = Animator.StringToHash("jump1");
     private int death = Animator.StringToHash("death");
-    private int runplyer1 = Animator.StringToHash("running1");
-    private int pistol = Animator.StringToHash("Pistol");
-    private int rifle = Animator.StringToHash("rifleFire");
-    private int TwoJump = 0;
-    private bool booljump = false;
-
-    float angleY;
-    Vector3 CamVect;
-    Quaternion quat;
-    
-
+    private int runplyer1 = Animator.StringToHash("running");
+    private int pistol = Animator.StringToHash("pistol");
+    private int rifle = Animator.StringToHash("rifle");
+    private int walkpistol = Animator.StringToHash("walkpistol");
+    private int walkrifle = Animator.StringToHash("walkrifle");
+    private int runpistol = Animator.StringToHash("runpistol");
+    private int runrifle = Animator.StringToHash("runrifle");
+    public Camera mycam;
+    bool boolpistol = true;
+    int trocaArma = 1;
+    bool boolrifle = false;
+    NavMeshAgent dante;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody>(); 
-        if (travarMouse)
-        {
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
-        }
+        rb = GetComponent<Rigidbody>();
+        dante = GetComponent<NavMeshAgent>();
+
+        dante.speed = 4f;
+        dante.acceleration = 8f;
+        dante.angularSpeed = 120f;
+        dante.stoppingDistance = 0.5f;
     }
 
     private void Update()
     {
-        
-        mouseY += Input.GetAxis("Mouse X") * sensibilidade;
-        
-        transform.eulerAngles=new Vector3(0, mouseY, 0);
-
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
-            if (TwoJump < 2)
-            {
-                booljump = true;
-            }
-            else 
-            {
-                booljump = false;
-                TwoJump = 0;
-            }
-
+            trocaArma *= -1;
+        }
+        
+        if (trocaArma > 0)
+        {
+            boolpistol = true;
+            boolrifle = false;
+        }
+        else
+        {
+            boolpistol = false;
+            boolrifle = true;
         }
 
+        if (Input.GetMouseButton(0))
+        {
+            Ray ray = mycam.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity, NavMesh.AllAreas))
+            {
+              if (Physics.Raycast(ray, out hit))
+                {
+                    dante.SetDestination(hit.point);
+                }
+            } 
+        }
+      
         move();
        
     }
 
+    private void AttackEnemy(GameObject enemy, int damage)
+    {
+             
+        SpiderControlller enemyHealth = enemy.GetComponent<SpiderControlller>();
+
+        if (enemyHealth != null)
+        {
+            enemyHealth.VidaSpider(damage); 
+        }
+    }
+
     private void move()
     {
-        if (Input.GetKey(KeyCode.W) & Input.GetKey(KeyCode.R))
-        {
-            RunningPlayer();
-            transform.Translate(Vector3.forward * Time.deltaTime * velocity * 2);
-
-        } else if (Input.GetKey(KeyCode.W))
-        {
-            movePlayer();
-            transform.Translate(Vector3.forward * Time.deltaTime * velocity);
+        if (dante.remainingDistance > dante.stoppingDistance)
+            {
+            if (Input.GetKey(KeyCode.W))
+            {
+                dante.speed = 8f;
+                if (Input.GetMouseButton(1))
+                {
+                    if (boolpistol)
+                    {
+                        RunningPistolPlayer();
+                    }
+                    else if (boolrifle)
+                    {
+                        RunningRiflePlayer();
+                    }
+                }
+                else
+                {
+                    RunningPlayer();
+                }
+                
+            }
+            if (Input.GetMouseButton(1))
+            {
+                dante.speed = 4f;
+                if (boolpistol)
+                {
+                    WalkPistolPlayer();
+                } else if (boolrifle)
+                {
+                    WalkRiflePlayer();
+                }
+                
+            }
+            else
+            {
+                dante.speed = 4f;
+                movePlayer(); 
+            }
 
         }
-        else if (Input.GetKey(KeyCode.S))
+        else
         {
-            movePlayer();
-            transform.Translate(Time.deltaTime * velocity * Vector3.back);
-
-        }  else
-        {
-            IdlePlayer();
+            if (Input.GetMouseButton(1))
+            {
+                if (boolpistol)
+                {
+                    AttackPlayerPistol();
+                }
+                else if (boolrifle)
+                {
+                    AttackPlayerRifle();
+                }
+            }
+            else
+            {
+                IdlePlayer();
+            }
         }
     }
 
     private void movePlayer()
     {
-        animator.SetBool(jump, false);
+        animator.SetBool(walkrifle, false);
+        animator.SetBool(runpistol, false);
+        animator.SetBool(runrifle, false);
+        animator.SetBool(walkpistol, false);
         animator.SetBool(walkPlayer, true);
         animator.SetBool(runplyer1, false);
         animator.SetBool(pistol, false);
         animator.SetBool(rifle, false);
         animator.SetBool(death, false);
+        
     }
 
-    private void JumpPlayer()
+    private void WalkPistolPlayer()
     {
-        animator.SetBool(jump, true);
-        animator.SetBool(walkPlayer, true);
         animator.SetBool(runplyer1, false);
+        animator.SetBool(walkPlayer, false);
+        animator.SetBool(walkrifle, false);
+        animator.SetBool(runpistol, false);
+        animator.SetBool(runrifle, false);
+        animator.SetBool(walkpistol, true);
         animator.SetBool(pistol, false);
         animator.SetBool(rifle, false);
         animator.SetBool(death, false);
-
     }
 
+    private void WalkRiflePlayer()
+    {
+        animator.SetBool(runplyer1, false);
+        animator.SetBool(walkPlayer, false);
+        animator.SetBool(walkrifle, true);
+        animator.SetBool(runpistol, false);
+        animator.SetBool(runrifle, false);
+        animator.SetBool(walkpistol, false);
+        animator.SetBool(pistol, false);
+        animator.SetBool(rifle, false);
+        animator.SetBool(death, false);
+    }
 
     private void AttackPlayerPistol()
     {
-        animator.SetBool(jump, false);
+        animator.SetBool(walkrifle, false);
+        animator.SetBool(runpistol, false);
+        animator.SetBool(runrifle, false);
+        animator.SetBool(walkpistol, false);
         animator.SetBool(walkPlayer, false);
         animator.SetBool(runplyer1, false);
         animator.SetBool(pistol, true);
@@ -121,7 +202,10 @@ public class MovimentPlayer : MonoBehaviour
 
     private void AttackPlayerRifle()
     {
-        animator.SetBool(jump, false);
+        animator.SetBool(walkrifle, false);
+        animator.SetBool(runpistol, false);
+        animator.SetBool(runrifle, false);
+        animator.SetBool(walkpistol, false);
         animator.SetBool(walkPlayer, false);
         animator.SetBool(runplyer1, false);
         animator.SetBool(pistol, false);
@@ -132,7 +216,10 @@ public class MovimentPlayer : MonoBehaviour
     private void DeathPlayer()
     {
         /*barraVida.SetActive(false);*/
-        animator.SetBool(jump, false);
+        animator.SetBool(walkrifle, false);
+        animator.SetBool(runpistol, false);
+        animator.SetBool(runrifle, false);
+        animator.SetBool(walkpistol, false);
         animator.SetBool(walkPlayer, false);
         animator.SetBool(runplyer1, false);
         animator.SetBool(pistol, false);
@@ -151,7 +238,10 @@ public class MovimentPlayer : MonoBehaviour
     }
     private void IdlePlayer()
     {
-        animator.SetBool(jump, false);
+        animator.SetBool(walkrifle, false);
+        animator.SetBool(runpistol, false);
+        animator.SetBool(runrifle, false);
+        animator.SetBool(walkpistol, false);
         animator.SetBool(walkPlayer, false);
         animator.SetBool(runplyer1, false);
         animator.SetBool(pistol, false);
@@ -162,12 +252,40 @@ public class MovimentPlayer : MonoBehaviour
     {
         animator.SetBool(runplyer1, true);
         animator.SetBool(walkPlayer, false);
-        animator.SetBool(jump, false);
+        animator.SetBool(walkrifle, false);
+        animator.SetBool(runpistol, false);
+        animator.SetBool(runrifle, false);
+        animator.SetBool(walkpistol, false);
         animator.SetBool(pistol, false);
         animator.SetBool(rifle, false);
         animator.SetBool(death, false);
     }
 
+    private void RunningPistolPlayer()
+    {
+        animator.SetBool(runplyer1, false);
+        animator.SetBool(walkPlayer, false);
+        animator.SetBool(walkrifle, false);
+        animator.SetBool(runpistol, true);
+        animator.SetBool(runrifle, false);
+        animator.SetBool(walkpistol, false);
+        animator.SetBool(pistol, false);
+        animator.SetBool(rifle, false);
+        animator.SetBool(death, false);
+    }
+
+    private void RunningRiflePlayer()
+    {
+        animator.SetBool(runplyer1, false);
+        animator.SetBool(walkPlayer, false);
+        animator.SetBool(walkrifle, false);
+        animator.SetBool(runpistol, false);
+        animator.SetBool(runrifle, true);
+        animator.SetBool(walkpistol, false);
+        animator.SetBool(pistol, false);
+        animator.SetBool(rifle, false);
+        animator.SetBool(death, false);
+    }
     private void OnDrawGizmos()
     {
         if (this)

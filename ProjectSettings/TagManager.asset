@@ -5,15 +5,17 @@ TagManager:
   serializedVersion: 2
   tags:
   - Dante
+  - camera
+  - spider
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - SpiderEnemy
   - Water
   - UI
-  - 
-  - 
+  - WolfEnemy
+  - MonsterEnemy
   - 
   - 
   - 
