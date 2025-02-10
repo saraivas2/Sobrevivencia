@@ -31,7 +31,7 @@ public class MovimentPlayer : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         dante = GetComponent<NavMeshAgent>();
 
-        dante.speed = 4f;
+        dante.speed = 5f;
         dante.acceleration = 8f;
         dante.angularSpeed = 120f;
         dante.stoppingDistance = 0.5f;
@@ -86,18 +86,18 @@ public class MovimentPlayer : MonoBehaviour
 
     private void move()
     {
-        if (dante.remainingDistance > dante.stoppingDistance)
-            {
+        if (dante.remainingDistance > dante.stoppingDistance+0.2f)
+        {
             if (Input.GetKey(KeyCode.W))
             {
-                dante.speed = 8f;
+                dante.speed = 10f;
                 if (Input.GetMouseButton(1))
                 {
                     if (boolpistol)
                     {
                         RunningPistolPlayer();
                     }
-                    else if (boolrifle)
+                    else
                     {
                         RunningRiflePlayer();
                     }
@@ -106,26 +106,27 @@ public class MovimentPlayer : MonoBehaviour
                 {
                     RunningPlayer();
                 }
-                
+
             }
+            else 
+            
             if (Input.GetMouseButton(1))
             {
-                dante.speed = 4f;
+                dante.speed = 5f;
                 if (boolpistol)
                 {
                     WalkPistolPlayer();
-                } else if (boolrifle)
+                }
+                else 
                 {
                     WalkRiflePlayer();
                 }
-                
             }
             else
             {
-                dante.speed = 4f;
-                movePlayer(); 
+                dante.speed = 5f;
+                movePlayer();
             }
-
         }
         else
         {

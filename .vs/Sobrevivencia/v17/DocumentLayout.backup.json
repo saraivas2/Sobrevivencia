@@ -1,69 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\amsar\\Sobrevivencia\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{EB51020E-D16B-D204-43A1-888B4791FFE4}|Assembly-CSharp.csproj|c:\\users\\amsar\\sobrevivencia\\assets\\scripts\\movimentplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB51020E-D16B-D204-43A1-888B4791FFE4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movimentplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB51020E-D16B-D204-43A1-888B4791FFE4}|Assembly-CSharp.csproj|C:\\Users\\amsar\\Sobrevivencia\\assets\\scripts\\spidercontrolller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB51020E-D16B-D204-43A1-888B4791FFE4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spidercontrolller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB51020E-D16B-D204-43A1-888B4791FFE4}|Assembly-CSharp.csproj|C:\\Users\\amsar\\Sobrevivencia\\assets\\scripts\\camerascreem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB51020E-D16B-D204-43A1-888B4791FFE4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerascreem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CameraScreem.cs",
-              "DocumentMoniker": "C:\\Users\\amsar\\Sobrevivencia\\Assets\\Scripts\\CameraScreem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraScreem.cs",
-              "ToolTip": "C:\\Users\\amsar\\Sobrevivencia\\Assets\\Scripts\\CameraScreem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CameraScreem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T21:10:58.897Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MovimentPlayer.cs",
-              "DocumentMoniker": "C:\\Users\\amsar\\Sobrevivencia\\Assets\\Scripts\\MovimentPlayer.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\MovimentPlayer.cs",
-              "ToolTip": "C:\\Users\\amsar\\Sobrevivencia\\Assets\\Scripts\\MovimentPlayer.cs",
-              "RelativeToolTip": "Assets\\Scripts\\MovimentPlayer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T15:28:49.761Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SpiderControlller.cs",
-              "DocumentMoniker": "C:\\Users\\amsar\\Sobrevivencia\\Assets\\Scripts\\SpiderControlller.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SpiderControlller.cs",
-              "ToolTip": "C:\\Users\\amsar\\Sobrevivencia\\Assets\\Scripts\\SpiderControlller.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SpiderControlller.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAABBwGgAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T15:02:38.786Z"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
