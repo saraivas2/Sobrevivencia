@@ -7,6 +7,14 @@ TagManager:
   - Dante
   - camera
   - spider
+  - wolf
+  - monster
+  - pistol
+  - rifle1
+  - rifle2
+  - damagePistol
+  - damageRifle1
+  - damageRifle2
   layers:
   - Default
   - TransparentFX
@@ -16,7 +24,7 @@ TagManager:
   - UI
   - WolfEnemy
   - MonsterEnemy
-  - 
+  - Dante
   - 
   - 
   - 
