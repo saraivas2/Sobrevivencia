@@ -12,11 +12,8 @@ public class GameOverScript : MonoBehaviour
     {
         canvas.GetComponent<Canvas>().enabled = false;
     }
-    private void Update()
-    {
-        ShowTelaGameOver(show);
-    }
-    public bool ShowTelaGameOver(bool show)
+    
+    public void ShowTelaGameOver(bool show)
     {
         if (show)
         {
@@ -33,6 +30,6 @@ public class GameOverScript : MonoBehaviour
                 show = false;
             }
         }
-        return show;
+       
     }
 }

@@ -26,7 +26,7 @@ public class SpiderControlller : MonoBehaviour
     public float vidaFull;
     bool death = false;
     float timer = 15;
-    GameObject spiderGameobject;
+    public GameObject spiderGameobject;
 
 
     // Start is called before the first frame update
@@ -40,7 +40,6 @@ public class SpiderControlller : MonoBehaviour
         animator = GetComponent<Animator>();
         scriptPlayer = player.GetComponent<MovimentPlayer>();
         vidaFull = vida;
-        spiderGameobject = GameObject.FindWithTag("spider");
         StopCoroutine(ResetarAtaque());
     }
 
@@ -101,7 +100,6 @@ public class SpiderControlller : MonoBehaviour
         }
     }
 
-
     public float GetVida()
     {
         return vida;
@@ -149,7 +147,11 @@ public class SpiderControlller : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, player.transform.position) < distance)
         {
-            movimentSpider();
+            if (!attackBool)
+            {
+                movimentSpider();
+            }
+            
             light.SetActive(true);
         }
     }
@@ -169,7 +171,7 @@ public class SpiderControlller : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer <= 0)
         {
-            //Destroy(this.spiderGameobject);
+            Destroy(spiderGameobject);
         }
     }
     private void AttackDante()
@@ -233,6 +235,7 @@ public class SpiderControlller : MonoBehaviour
     {
         animator.SetFloat("X", 1);
         animator.SetFloat("Y", 1);
+        spider.enabled = false;
         death = true;
     }
 

@@ -9,7 +9,7 @@ public class PoitLightSpider : MonoBehaviour
     [SerializeField] private Transform Dante;
     [SerializeField] private Transform Spider;
     public float distanceSpider;
-    bool lightOn;
+    public bool lightOn;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,10 +36,9 @@ public class PoitLightSpider : MonoBehaviour
         {
             pointlight.enabled = false;
         }
+
+        
     }
 
-    public bool lightOnOff()
-    {
-        return lightOn;
-    }
+    
 }

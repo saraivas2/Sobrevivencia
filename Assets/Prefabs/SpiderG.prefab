@@ -868,7 +868,6 @@ GameObject:
   - component: {fileID: 7672890908634939847}
   - component: {fileID: 6169447762408577026}
   - component: {fileID: 3769877244432378005}
-  - component: {fileID: 8557292975787010893}
   m_Layer: 3
   m_Name: VidaExp
   m_TagString: Untagged
@@ -884,12 +883,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2738266729857434254}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.2, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.9608767, z: 0.015014648}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 179642390031506950}
+  m_Father: {fileID: 5093489775338486326}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &6169447762408577026
 MeshRenderer:
@@ -957,23 +956,6 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
---- !u!114 &8557292975787010893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2738266729857434254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91ff59277f2ba2949ab4da173eced76d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spider: {fileID: 663690927509750972}
-  barra: {fileID: 3769877244432378005}
-  vidaFull: 0
-  vida: 0
-  cam: {fileID: 0}
 --- !u!1 &2793172871344333415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,6 +1480,7 @@ MonoBehaviour:
   Dante: {fileID: 0}
   Spider: {fileID: 179642390031506950}
   distanceSpider: 15
+  lightOn: 0
 --- !u!1 &3552022942356841322
 GameObject:
   m_ObjectHideFlags: 0
@@ -1818,6 +1801,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000335107866456208}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4197652504351325997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5093489775338486326}
+  - component: {fileID: 1438717238113604756}
+  m_Layer: 0
+  m_Name: vida
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5093489775338486326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4197652504351325997}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.000483195, z: -0.008341472}
+  m_LocalScale: {x: 0.5555556, y: 0.5555556, z: 0.5555556}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7672890908634939847}
+  m_Father: {fileID: 179642390031506950}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1438717238113604756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4197652504351325997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ff59277f2ba2949ab4da173eced76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spider: {fileID: 663690927509750972}
+  Dante: {fileID: 0}
+  barra: {fileID: 3769877244432378005}
+  vidaFull: 0
+  vida: 0
+  cam: {fileID: 0}
+  distanceSpider: 15
+  distance: 0
 --- !u!1 &4352361974500588082
 GameObject:
   m_ObjectHideFlags: 0
@@ -3981,11 +4017,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c702044e8b7b7de4d96c5af2d585d4d4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 54.87
+      value: -623.88
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c702044e8b7b7de4d96c5af2d585d4d4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.1
+      value: -165.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c702044e8b7b7de4d96c5af2d585d4d4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5758,7 +5794,7 @@ PrefabInstance:
       addedObject: {fileID: 7367702198705337916}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c702044e8b7b7de4d96c5af2d585d4d4, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7672890908634939847}
+      addedObject: {fileID: 5093489775338486326}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c702044e8b7b7de4d96c5af2d585d4d4, type: 3}
       insertIndex: -1
@@ -5904,6 +5940,7 @@ MonoBehaviour:
     m_Bits: 256
   posAttack: {fileID: 7071829845941365694}
   vidaFull: 0
+  spiderGameobject: {fileID: 663690927509750972}
 --- !u!54 &3837225572984315683
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -24,7 +24,7 @@ public class MovimentPlayer : MonoBehaviour
     private GameObject pointFireRifle1;
     private GameObject pointFirerifle2;
     bool deathDante = false;
-    public GameOverScript gameover;
+    
    
     private void Start()
     {
@@ -56,6 +56,10 @@ public class MovimentPlayer : MonoBehaviour
             move();
 
             tempoTiro();
+        }
+        else
+        {
+            GameOverOn();
         }
     }
 
@@ -328,15 +332,20 @@ public class MovimentPlayer : MonoBehaviour
         animator.SetFloat("Y", 0);
     }
 
+    private void GameOverOn()
+    {
+        GameOverScript gameover = GameObject.Find("GameOver").GetComponent<GameOverScript>();
+
+        gameover.ShowTelaGameOver(true);
+
+        Invoke("ReloadScene", 3f);
+    }
+
     private void DeathPlayer()
     {
         /*barraVida.SetActive(false);*/
         animator.SetBool("die", true);
-              
-        bool resp = gameover.ShowTelaGameOver(true);
-        
-        Invoke("ReloadScene", 3f);
-
+        deathDante = true;
     }
 
     private void ReloadScene()
